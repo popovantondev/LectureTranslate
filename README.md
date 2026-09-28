@@ -55,7 +55,7 @@ bash Scripts/test-all.sh
 bash Scripts/build.sh --preview
 ```
 
-Die Tests verwenden synthetische Daten und isolierte Zustände. Der aktuelle Gesamt-Offline-Test ist erfolgreich; GUI-Abnahme und Release-Paket bleiben offen. Preview-Builds sind keine Release-Pakete. Weitere Einzelheiten: [Build und lokale Tests](docs/de/BUILD.md).
+Die lokalen Offline-Tests bestanden 2473 Prüfungen einschließlich 14 Release-Validierungen. Zwölf synthetische GUI-Hauptfenster (DE/RU/EN, hell/dunkel, kompakt/groß) sowie Startbildschirm und Menüs wurden geprüft; nicht jeder einzelne Dialog wurde durchgespielt. Das veröffentlichte Paket [3.5.1 · Build 16](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1) ist verfügbar. Preview-Builds bleiben davon getrennte Testpakete. Weitere Einzelheiten: [Build und lokale Tests](docs/de/BUILD.md).
 
 ## Rechte und Drittanbieter
 
