@@ -34,6 +34,6 @@ Do not manually modify existing `dist/vX.Y.Z` or `releases/vX.Y.Z` directories. 
 
 ## macOS notice
 
-The planned ZIP is not Developer ID-signed or Apple-notarized; macOS may warn on first launch. A local ad-hoc signature is not a substitute for Developer ID signing or notarization.
+The published ZIP is not Developer ID-signed or Apple-notarized; macOS may warn on first launch. A local ad-hoc signature is not a substitute for Developer ID signing or notarization.
 
 For details, see the English [project overview](README.md). The internal verification log is not part of this public documentation set.
