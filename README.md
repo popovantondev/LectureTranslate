@@ -61,4 +61,4 @@ Die lokalen Offline-Tests bestanden 2473 Prüfungen einschließlich 14 Release-V
 
 Für den ursprünglichen Quellcode wird keine Open-Source-Lizenz erteilt. Öffentliche Sichtbarkeit ist keine Erlaubnis, den Quellcode oder abgeleitete Versionen außerhalb der GitHub-Plattform zu kopieren, zu ändern, weiterzuverbreiten oder zu verkaufen. Das Herunterladen und Ausführen eines unveränderten Release-Binaries ist für den persönlichen Gebrauch gestattet. Details: [Rechte und erlaubte Nutzung](docs/de/RIGHTS.md) sowie [Drittanbieterhinweise](docs/de/THIRD-PARTY-NOTICES.md).
 
-Geplant ist ein ZIP ohne Developer ID-Signatur und Apple-Notarisierung; macOS kann beim ersten Öffnen warnen. Die Hinweise zu eigenem Code gewähren keine Rechte an Vorlesungsmaterial, Codex CLI, ChatGPT oder optionalen FFmpeg-Builds.
+Das veröffentlichte ZIP enthält keine Developer ID-Signatur und keine Apple-Notarisierung; macOS kann beim ersten Öffnen warnen. Die Hinweise zu eigenem Code gewähren keine Rechte an Vorlesungsmaterial, Codex CLI, ChatGPT oder optionalen FFmpeg-Builds.
