@@ -1,0 +1,22 @@
+name: Feature request
+description: Suggest an improvement to LectureTranslate.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      placeholder: Describe the task and its impact without private lecture details.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints and alternatives
+      description: Include privacy, accessibility, language, and offline requirements where relevant.

@@ -1,0 +1,46 @@
+name: Bug report
+description: Report a reproducible problem using synthetic data.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: >
+        Do not attach real lecture files, project archives, logs, credentials,
+        private paths, email addresses, or screenshots containing private data.
+        Replace examples with synthetic content.
+  - type: input
+    id: version
+    attributes:
+      label: App version and build
+      placeholder: 3.5.0 / 15
+    validations:
+      required: true
+  - type: input
+    id: macos
+    attributes:
+      label: macOS version and Mac type
+      placeholder: macOS 15, Apple Silicon
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Use synthetic subtitle text and generic file names.
+      placeholder: |
+        1. Create a short synthetic SRT...
+        2. Add it to the queue...
+        3. Observe...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and actual behavior
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: Relevant checks or sanitized error message
+      description: Remove local paths and private data before posting.
