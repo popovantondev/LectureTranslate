@@ -1,0 +1,11 @@
+7
+00:00:01,000 --> 00:00:04,500
+Heute sprechen wir über Heilpflanzen.
+
+11
+00:00:04,500 --> 00:00:08,000
+Nicht jede Pflanze ist für jeden Menschen geeignet.
+
+15
+00:00:08,200 --> 00:00:12,000
+In diesem Beispiel steht die Angabe 5 ml.

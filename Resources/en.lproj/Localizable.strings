@@ -1,0 +1,510 @@
+/* Stable UI keys. Lecture text, profile content and model comments are not localized. */
+"app.title" = "LectureTranslate";
+"language.name" = "English";
+"language.restart_notice" = "The language change will take effect after restarting.";
+"common.cancel" = "Cancel";
+"common.close" = "Close";
+"common.save" = "Save";
+"common.continue" = "Continue";
+"common.error" = "Error";
+"queue.title" = "Queue";
+"queue.empty" = "There are no lectures in the queue.";
+"queue.items_count" = "%lld items";
+"translation.source" = "Source";
+"translation.target" = "Translation";
+"translation.review" = "Review";
+"translation.completed_count" = "%lld of %lld completed";
+"review.approved" = "Approved";
+"review.unresolved" = "Unresolved notes";
+"media.select_video" = "Choose Video…";
+"media.select_audio_track" = "Choose Audio Track";
+"app.subtitle" = "LectureTranslate";
+"app.direction" = "DE → RU · subtitles";
+"queue.add_files" = "Add SRT";
+"queue.add_folder" = "Folder";
+"queue.include_subfolders" = "Include subfolders";
+"queue.group.ready" = "Ready";
+"queue.group.inProgress" = "In progress";
+"queue.group.waiting" = "Waiting";
+"queue.part" = "Part %lld";
+"status.ready" = "ready";
+"queue.archived_revision" = "Archived revision · completed responses saved separately";
+"queue.exported_status" = "File saved · review has no notes; audio not checked";
+"queue.progress" = "Translated: %lld/%lld · %lld%% · parts: %lld";
+"queue.remove_help" = "Removes only the queue entry. The source file is not deleted.";
+"queue.auto_count" = "Auto · %lld";
+"queue.auto_quota" = "Auto · quota";
+"queue.parallel_files" = "%lld files";
+"queue.fast_remembered" = "Higher usage · remembered";
+"queue.fast_session" = "Higher usage · until close";
+"queue.parallel_progress" = "Limit: %lld · admitted requests: %lld · active lectures: %lld";
+"queue.pause_reason" = "Paused: %@";
+"queue.reserve_override_confirmed" = "Continuing below reserve confirmed for this run only.";
+"settings.translation" = "Translation settings";
+"settings.profile" = "Profile";
+"settings.create_profile" = "Create profile…";
+"settings.glossary" = "Glossary…";
+"settings.reserve" = "Reserve: %lld%%";
+"settings.translation_model" = "Translation";
+"settings.review_model" = "Review: GPT-6 Sol · medium";
+"settings.open" = "Settings…";
+"quota.checked_at" = "Checked: %@";
+"quota.above_reserve" = "Above reserve";
+"quota.refresh_needed" = "Refresh data";
+"quota.check_after" = "Check after %@";
+"quota.waiting" = "Waiting for quota";
+"quota.checking" = "Checking…";
+"quota.no_fresh_data" = "No fresh data";
+"quota.refresh" = "Refresh limits";
+"quota.refresh_help" = "Read Codex limits. Does not start a model.";
+"quota.five_hours" = "5 hours";
+"quota.week" = "Week";
+"quota.remaining" = "%lld%% remaining";
+"queue.tier.pro" = "confirmed Pro";
+"queue.tier.plus_unknown" = "Plus or unknown plan";
+"queue.explanation.manual" = "Manual: up to %lld lectures at once (50 overall). Every request checks quota and reserve; parts of one lecture run in order.";
+"queue.explanation.unknown" = "Auto: waiting for fresh, reliable quota data. No requests start while quota is unknown or stale. After checking: Plus/unknown up to 15, confirmed Pro up to 50.";
+"queue.explanation.auto_empty" = "Auto for %@: up to %lld lectures at once; the queue is empty. 50 overall; quota and reserve are checked, and parts of one lecture run in order.";
+"queue.explanation.auto" = "Auto for %@: up to %lld lectures at once, limited by the number in the queue. 50 overall; quota and reserve are checked, and parts of one lecture run in order.";
+"queue.clear" = "Clear queue…";
+"project.open" = "Open project…";
+"project.save" = "Save project";
+"project.save_as" = "Save project as…";
+"action.prepare" = "Prepare locally";
+"action.timing_diagnostics" = "Timing diagnostics…";
+"action.pause" = "Pause";
+"action.stop_now" = "Stop now";
+"action.resume_translation" = "Resume translation";
+"action.start_translation" = "Start translation";
+"action.start_help" = "Translate the entire queue with Codex. Uses ChatGPT quota and checks reserve before each request.";
+"action.save_translations_count" = "Save translations… (%lld)";
+"action.save_translations_help" = "Save completed translations for the entire queue, including versions with notes. Saving a file, completing translation, and readiness for speech are separate states.";
+"progress.saving" = "Saving: %@";
+"progress.preparing" = "Preparing: %@";
+"progress.reading_files" = "Reading file list…";
+"settings.model_help" = "The model cannot change while the queue contains completed cues. Finish or clear it; new jobs will start with GPT-6 Luna.";
+"settings.reasoning" = "Reasoning";
+"settings.medium" = "Medium";
+"settings.high" = "High";
+"settings.srt_text" = "SRT text";
+"settings.spoken_style" = "For speech · spell everything out";
+"settings.display_style" = "For screen · use digits";
+"settings.style_help" = "Choose “Spell everything out” for Silero. To change the style of a started translation, save the project and create a new queue.";
+"settings.save_location" = "Save to";
+"settings.next_to_srt" = "Next to SRT";
+"settings.downloads" = "Downloads";
+"settings.other_folder" = "Another folder…";
+"settings.auto_resume" = "Resume after quota reset";
+"settings.sol_reviews" = "Sol reviews per lecture: %lld";
+"queue.parallelism" = "Concurrent";
+"settings.spoken_help" = "Silero / Siri: spell out numbers, units, and abbreviations; review uncertain cases locally.";
+"settings.display_help" = "Digits are allowed in screen mode. This mode is unsuitable for Silero without extra normalization.";
+"status.queued" = "Waiting to prepare";
+"status.prepared" = "Prepared · not translated";
+"status.invalid" = "Source file error";
+"status.sourceChanged" = "Source file changed";
+"status.translating" = "Translating · can resume";
+"status.translated" = "Translated · save SRT";
+"status.needsReview" = "Translated · review needed";
+"status.translationError" = "Translation paused: error";
+"status.exported" = "Done · Russian SRT saved";
+"status.paused" = "Paused · completed responses saved";
+"memory.invalid_term" = "Enter a translation for the term and confirm that you reviewed it.";
+"memory.duplicate_confirmed_term" = "This German term is already confirmed. Remove confirmation from the older entry first; its translation was not replaced.";
+"memory.unknown_term" = "Unknown term.";
+"export.preparing" = "Preparing completed translations for saving. No model is started.";
+"export.warnings_title" = "Translations still have unresolved notes";
+"export.warnings_body" = "%@";
+"export.save_with_notes" = "Save with notes";
+"export.cancel" = "Cancel";
+"export.single_title" = "Save Russian SRT for this lecture";
+"export.single_message" = "Notes remain in the app. Replacing an existing file requires confirmation and a backup.";
+"export.collision_title" = "Several lectures produce the same Russian SRT name";
+"export.collision_body" = "%@\n\nSaved answers and project data are safe. Choose separate paths or keep one result; other translations remain in the project.";
+"export.separate" = "Save both in separate folders";
+"export.keep" = "Keep only: %@";
+"export.cancel_batch" = "Cancel batch";
+"export.separate_title" = "Separate name for %@";
+"export.separate_message" = "Choose a separate path. Existing files require a separate decision and backup.";
+"export.exists_title" = "Russian SRT already exists";
+"export.exists_body" = "%@\n\nThe existing file is backed up before replacement. German source files are never replaced.";
+"export.skip" = "Skip";
+"export.replace" = "Replace with backup";
+"export.other_folder" = "Another folder…";
+"export.cancel_save" = "Cancel saving";
+"export.apply_all" = "Apply to all matches in this queue";
+"export.folder_title" = "Folder for Russian SRT";
+"project.clear_title" = "Clear the entire queue?";
+"project.clear_body" = "This removes %lld entries. Sources and completed SRT files stay in place. Save a project first if you may want to restore this queue.";
+"project.clear" = "Clear queue";
+"project.output_title" = "Where to save Russian SRT files";
+"project.save_as_title" = "Save project as…";
+"project.save_title" = "Save translation project";
+"project.panel_message" = "Queue, settings and completed parts. Video and source SRT files are not copied. Replacing an existing project creates a backup.";
+"project.update_title" = "Update saved project?";
+"project.update_body" = "%@\n\nThe previous version will be backed up. Sources and completed SRT files are unchanged.";
+"project.save_backup" = "Save with backup";
+"project.open_title" = "Open translation project";
+"project.replace_queue_title" = "Replace current queue with project?";
+"project.replace_queue_body" = "Completed SRT files and sources are not deleted. You can save the current queue as a separate project first.";
+"project.save_current_open" = "Save current and open";
+"project.close_title" = "What should happen to the queue when closing?";
+"project.close_body" = "Keep saves the queue and completed parts for next launch. Project creates a separate file. Clear removes only queue entries. Active requests will finish before closing.";
+"project.keep_close" = "Keep queue and close";
+"project.save_close" = "Save project and close…";
+"project.clear_close" = "Clear queue and close";
+"project.banner_cleared" = "Queue cleared. Sources, Russian SRT files and saved translation results were not deleted.";
+"project.banner_opened" = "Project opened paused. Completed parts were restored.";
+"startup.title_busy" = "Translator is already open";
+"startup.title_error" = "Could not open queue";
+"startup.safe" = "Sources, translations and the saved queue were not changed.";
+"startup.one_owner" = "Only one app copy can work with the queue at a time. This protects translations from simultaneous changes.";
+"startup.owner_version" = "Version %@ is open";
+"startup.instructions" = "To use this version, close the other copy after saving its queue. The queue will open here; if not, choose Check Again.";
+"startup.safe_unreadable" = "Saved data was not overwritten. Do not delete the queue. Resolve the cause below and try opening it again.";
+"startup.show" = "Show Open Window";
+"startup.retry" = "Check Again";
+"startup.close" = "Close This Window";
+"export.report_title" = "Save Russian subtitles";
+"export.summary" = "Saved: %1$lld. Skipped: %2$lld. In project: %3$lld. Errors: %4$lld.";
+"export.stopped" = " Saving stopped.";
+"startup.busy_title" = "Translator is already open";
+"startup.error_title" = "Could not open queue";
+"startup.in_use" = "Only one app copy can work with the queue at a time. This protects translations from simultaneous changes.";
+"project.cancel" = "Cancel";
+"export.warning_limit" = "Saving does not confirm readiness for speech.";
+"export.warning_row" = "%1$@ · %2$lld notes";
+"export.warning_speech" = "%lld speech text checks failed locally";
+"error.permission" = "Permission denied. Check access to the selected file or folder.";
+"error.space" = "There is not enough free disk space.";
+"error.missing" = "The selected file or folder could not be found.";
+"error.exists" = "A file with this name already exists. Choose a different name or confirm replacement.";
+"error.generic" = "The operation could not be completed. Check the technical details and try again.";
+"error.technical" = "Technical details: %@";
+"startup.ambiguous" = "Could not identify one open window. Close other translator copies and choose Check Again.";
+"startup.lookup_failed" = "Could not find the open window. You can close the other copy manually and try again.";
+"startup.owner_closed" = "The other copy has closed. Choose Check Again.";
+"startup.activation_denied" = "macOS did not switch windows. Open the running translator from the Dock.";
+"project.saved_path" = "Project saved: %@";
+"project.saved_path_warning" = "Project saved: %@. The queue could not remember its path: %@. Open the project manually next time.";
+"project.previous_version" = "Previous version: %@";
+"project.banner_paused" = "Saved pause. Choose Resume Translation when ready.";
+"project.banner_restored" = "Saved queue opened. Completed parts are still available.";
+"export.source" = "Source: %@";
+"export.issues_left" = "Notes remaining: %lld";
+"export.find_srt" = "Show SRT in Finder";
+"export.find_backup" = "Show backup";
+"export.done" = "Done";
+"export.report_note" = "Saving does not clear notes. Review them later if needed; original timecodes are preserved.";
+"export.journal_warning" = "SRT was written, but the project could not save its export status: %@";
+"export.queue_warning" = " The file was written, but the queue was not updated: %@";
+"common.all" = "All";
+"common.stop" = "Stop";
+"terms.title" = "Term library";
+"terms.explanation" = "The model only suggests terms. Confirmed terms apply to new lectures using the same profile. Started translations keep their dictionary snapshot.";
+"terms.filter" = "Show";
+"terms.proposed" = "Proposed";
+"terms.confirmed" = "Confirmed";
+"terms.deferred" = "Deferred";
+"terms.search" = "Search terms";
+"terms.german_label" = "German dictionary spelling";
+"terms.german" = "German term";
+"terms.russian_label" = "Russian translation";
+"terms.russian" = "Russian term";
+"terms.show_source" = "Show source SRT";
+"terms.unconfirm" = "Remove confirmation";
+"terms.checked" = "Checked against a reliable source or the original";
+"terms.confirm" = "Confirm for future lectures";
+"terms.restore" = "Restore suggestion";
+"terms.defer" = "Defer";
+"terms.select" = "Select a term on the left.";
+"listen.title" = "Listen to original";
+"media.video" = "Video…";
+"media.ffmpeg" = "FFmpeg…";
+"media.found_videos" = "Found videos";
+"media.audio" = "Audio";
+"media.choose_track" = "Choose a track";
+"listen.no_padding" = "No padding";
+"media.repeat_clip" = "Replay clip";
+"listen.play_clip" = "Listen to clip";
+"media.cancel_prepare" = "Cancel preparation";
+"media.cancel_read" = "Cancel reading";
+"media.source_video" = "Source video";
+"media.preparing_video" = "Preparing video…";
+"media.choose_track_play" = "Choose audio and select “Preview clip”";
+"media.choose_german_track" = "Choose German audio track";
+"media.play_clip" = "Preview clip";
+"media.repeat" = "Repeat";
+"media.short_clip" = "Short local clip";
+"media.choose_original" = "Choose source video";
+"media.tools_folder" = "Folder containing installed ffmpeg and ffprobe";
+"listen.none_nearby" = "No nearby video found. You can choose one manually.";
+"listen.multiple" = "Several videos found — choose the original.";
+"listen.need_tools" = "ffmpeg and ffprobe are required. Choose their folder with “FFmpeg…”.";
+"listen.reading" = "Reading audio tracks locally…";
+"listen.choose_german" = "Choose the German track. Its language label may be missing or incorrect.";
+"listen.one_track" = "One track. Listen to confirm it is the German original.";
+"listen.preparing_clip" = "Preparing a short clip locally…";
+"media.tools_missing" = "The folder does not contain both ffmpeg and ffprobe executables.";
+"media.choose_source" = "Choose a source video.";
+"media.choose_original_track" = "Choose the original German track.";
+"media.confirm_track" = "Listen to confirm the German original track is selected.";
+"media.window_title" = "Original video";
+"media.interval" = "Original: %@ — %@ · cue %lld";
+"menu.settings" = "Settings…";
+"menu.appearance" = "Appearance";
+"menu.theme" = "Theme";
+"menu.system_appearance" = "As in macOS";
+"menu.light" = "Light";
+"menu.dark" = "Dark";
+"menu.language" = "Language";
+"menu.help" = "LectureTranslate Help";
+
+"demo.banner" = "DEMO · synthetic data · translation and account access are disabled.";
+
+"page.heading" = "German to Russian";
+
+"page.subtitle" = "Meaning is preserved. Timecodes stay unchanged.";
+
+"action.show_srt" = "Show SRT";
+
+"action.save_this_srt" = "Save this SRT…";
+
+"result.translated" = "Translation complete";
+
+"result.translated_count" = "Translated cues: %1$lld/%2$lld";
+
+"result.saved" = "Current result saved";
+
+"result.unsaved" = "Current result not saved";
+
+"result.speech_not_applicable" = "Speech text check does not apply in screen mode";
+
+"result.speech_passed" = "Local speech text check passed";
+
+"result.speech_issues" = "Speech text check: %lld notes";
+
+"table.german_original" = "German original";
+
+"table.russian_translation" = "Russian translation";
+
+"tab.transcript" = "Transcript";
+
+"tab.model_package" = "Model package";
+
+"tab.review_count" = "Review: %lld";
+
+"tab.memory" = "Memory";
+
+"action.open_project" = "Open project…";
+
+"action.save_project" = "Save project";
+
+"action.save_project_as" = "Save project as…";
+
+"queue.remove" = "Remove";
+
+"table.number" = "No.";
+
+"table.start" = "Start";
+
+"table.seconds" = "Seconds";
+
+"table.edit_help" = "Edit this cue locally without a model";
+
+"table.part" = "Part";
+
+"table.save_package" = "Save package…";
+
+"action.show_video" = "Show video";
+
+"media.multiple_warning" = "Several videos were found. The app cannot choose one automatically.";
+
+"usage.help" = "CLI-reported data only. Excludes chat usage during development and interrupted requests without statistics. Cache is included in input tokens.";
+"usage.summary" = "Requests: %1$lld · tokens recorded: %2$lld/%3$lld · input: %4$lld · output: %5$lld · cached: %6$lld";
+
+"review.boundary_warning" = "Boundary falls before a complete sentence; translation needs context.";
+
+"review.plan_summary" = "The whole lecture is translated first, then risky parts are reviewed. Sol plan: %@.";
+
+"review.plan_pending" = "available after all parts are translated";
+
+"review.outcomes" = "Sol · candidates: %1$lld · reviewed unchanged: %2$lld · changed: %3$lld · unresolved: %4$lld · over budget: %5$lld";
+
+"review.part_reason" = "Part %1$lld: %@";
+
+"review.reason_missing" = "Reason was not saved in the older journal.";
+
+"review.risk_intro" = "Local risk indicators. These are not confirmed translation errors.";
+
+"review.notes_intro" = "Remaining notes. Compare source and translation; check ambiguous words and doses against the recording. Internal notes are not included in the SRT.";
+
+"review.group_counts" = "Question groups: %1$lld · notes: %2$lld. Adjacent repeats are grouped for display only.";
+
+"action.listen_original" = "Listen to original";
+
+"action.review_note" = "Review note…";
+
+"common.ok" = "OK";
+
+"edit.cue_title" = "Cue No. %1$lld · %@";
+
+"action.listen_open_video" = "Listen to original · open video";
+
+"edit.spoken_help" = "For speech output, edit the text itself: spell out numbers, units, and abbreviations. The checkbox does not hide remaining characters. Expand Latin names only from verified pronunciation.";
+
+"edit.review_help" = "Do not guess. You can save an edit without confirming it; the note will remain open. Check disputed doses or terms against the recording.";
+
+"edit.footer" = "Timecodes stay unchanged. Edits and history are stored locally; no model is called. Save the completed SRT with the separate button.";
+
+"edit.save" = "Save edit";
+
+"welcome.description" = "Add German subtitles. Choose a text style and where to save the Russian SRT.";
+
+"welcome.safety" = "Originals are protected · results are replaced only with confirmation and a backup";
+
+"profile.new_title" = "New profile";
+
+"profile.terms_help" = "Confirmed terms: German => Russian, one per line";
+
+"profile.accuracy_help" = "Formality and confidence follow the original. General accuracy rules apply to every profile.";
+
+"profile.create" = "Create";
+
+"terms.asr_help" = "Recognition errors can be corrected before confirmation. The original form remains evidence for the suggestion but does not become a confirmed synonym.";
+
+"terms.evidence_intro" = "Evidence for a suggestion does not prove it is correct:";
+
+"terms.confirmed_by_user" = "Confirmed by user";
+
+"terms.confirmed_at" = "Confirmed by user · %@";
+
+"terms.empty" = "There are no terms yet. Suggestions appear after parts of a new translation are completed.";
+
+"terms.counts" = "Total: %1$lld · confirmed: %2$lld · confirming or deferring does not start a model.";
+
+"memory.disclaimer" = "Machine memory is a context hint, not verified medical fact. Notes with unresolved issues or manual edits are not passed on.";
+
+"memory.workflow" = "Draft memory with German evidence is used during the main translation. Sol reviews run after all parts; completed parts are not translated again to refresh memory.";
+
+"memory.confirmed_count" = "Confirmed terms in this lecture snapshot: %lld";
+
+"memory.part_notes" = "Part %1$lld · notes: %2$lld";
+
+"memory.legacy_notice" = "An older started lecture keeps its request format. Memory applies to new translations; the old lecture does not need to be translated again.";
+
+"listen.padding" = "Padding";
+
+"listen.read_cancelled" = "Reading cancelled. Choose a video to try again.";
+
+"media.tools_help" = "Choose the installed ffmpeg and ffprobe tools. Nothing is downloaded.";
+
+"media.short_clip_help" = "For MKV and unsupported codecs: this cue only, with three seconds of padding, up to two minutes. ffmpeg and ffprobe are required.";
+
+"listen.padding_3" = "±3 sec";
+
+"listen.padding_8" = "±8 sec";
+
+"menu.lang_de" = "German";
+
+"menu.lang_en" = "English";
+
+"menu.lang_ru" = "Russian";
+"export.cancelled_kept" = "Cancelled; the translation remains in the app.";
+"export.distinct_paths" = "Choose different paths for the matching names. The batch has not started writing.";
+"export.kept_in_project" = "Not saved by your choice. The completed translation remains in the project.";
+"export.duplicate_target" = "Two lectures have the same output name in this folder. Save them in different folders; the existing file was not replaced.";
+"export.skipped_existing" = "Skipped: the existing file was left unchanged.";
+"export.same_folder" = "The same folder was selected. Choose another folder to save without replacing the file.";
+"export.already_current" = "Already saved: the contents match the current translation.";
+"export.saved" = "Saved.";
+"export.stopped_in_project" = "Not saved: the operation was stopped. The translation remains in the app.";
+"export.report_kept_in_app" = " Completed translations and notes remain in the app.";
+"project.default_name" = "Lectures";
+"project.wait_for_pause_unchanged" = "Wait for the pause. The queue was not changed.";
+"project.pause_before_save" = "Choose Pause and wait for the current response to be saved.";
+"project.wait_for_pause_not_saved" = "Wait for the pause. The project was not saved.";
+"project.wait_for_pause" = "Wait for the pause.";
+"runtime.routing_updated" = "Settings updated: GPT-6 Luna Medium for translation and GPT-6 Sol Medium for risk cases.";
+"runtime.routing_save_error" = "The switch to the new models could not be saved. The queue and completed translations were retained. %@";
+"runtime.routing_waiting" = "The current queue is unchanged because a translation is unfinished. After it finishes or the queue is cleared, new translations will safely switch to GPT-6 Luna and GPT-6 Sol.";
+"runtime.preferences_read_error" = "Speed settings could not be read. Fast is off. %@";
+"runtime.preferences_save_error" = "Startup settings could not be saved: %@";
+"runtime.rollback_error" = "The queue could not be saved: %@\nThe previous startup settings could not be restored: %@. The reserve and current-session settings are unchanged. Check disk access before restarting.";
+"runtime.queue_save_error" = "The queue could not be saved: %@";
+"runtime.settings_save_error" = "The settings could not be saved: %@";
+"runtime.fast_disable_error" = "Disabling Fast was not saved. The previous Fast setting remains active.";
+"runtime.fast_enable_title" = "Enable Fast?";
+"runtime.fast_enable_body" = "Fast may use your available quota faster. Translation and Sol reviews will use Fast. By default, it turns off after restart.";
+"timing.none" = "No ordering, duration, or overlap errors were found.";
+"timing.suggestion" = "Suggested intervals: #%lld %@ → %@; #%lld %@ → %@ (unchanged).";
+"timing.no_suggestion" = "No unambiguous minimal repair is available; check the recording and edit the time manually.";
+"timing.problem" = "Cue #%lld: %@\nPrevious #%@: %@\nCurrent #%lld: %@ → %@\nNext #%@: %@%@";
+"timing.errors_title" = "Timing errors · %lld";
+"timing.source_unchanged" = "The source file was not changed.";
+"timing.confirm_title" = "Confirm minimal timing repair?";
+"timing.confirm_body" = "A backup will be created beside the source. IDs and text are preserved. The changed hash will stop continuation from the old checkpoint; previous results remain available for recovery.";
+"timing.repair_backup" = "Repair with backup";
+"queue.choose_folder_title" = "Folder containing German SRT files";
+"queue.choose_files_title" = "German subtitles";
+"timing.transfer_title" = "Only the timecodes changed. Transfer the completed translation?";
+"timing.transfer_body" = "All %lld cues were checked: German text, IDs, and order match. Only time boundaries will change; Luna translation, Sol reviews, manual edits, and part assignments will be preserved. The old revision remains in the queue and project. The previously saved Russian SRT will not count as an export of the new revision.\n\nTime changes:\n%@%@\n\nSource: %@";
+"timing.transfer_action" = "Transfer without translating again";
+"source.check_title" = "Check the source file";
+"edit.source_checked" = "I checked the original; this note can be closed";
+"welcome.empty_title" = "Lectures in your language";
+"welcome.select_title" = "Select a lecture in the queue";
+"welcome.initial_status" = "Add German SRT files. Start translation to save Russian SRT files beside the sources.";
+"welcome.step_add_title" = "Add SRT files";
+"welcome.step_add_detail" = "One file or a folder";
+"welcome.step_translate_title" = "Start translation";
+"welcome.step_translate_detail" = "Parts are processed automatically";
+"welcome.step_voice_title" = "Create the voice-over";
+"welcome.step_voice_detail" = "In your audio app No. 2";
+"reserve.continue_title" = "Continue below the reserve?";
+"reserve.continue_body" = "This confirmation applies only until this run closes. New requests may use more of the remaining quota; active requests may already have crossed the reserve. Continuing is unavailable when quota is zero, unknown, or denied.";
+"reserve.wait" = "Wait for recovery";
+"reserve.continue_run" = "Continue this run";
+"runtime.settings_title" = "Work settings";
+"runtime.first_run_title" = "Settings before the first translation";
+"runtime.settings_description" = "Concurrency controls how many lectures run at once; the reserve keeps quota available for other tasks. These settings do not change completed translation text.";
+"runtime.concurrent_lectures" = "Concurrent lectures";
+"runtime.quantity" = "Quantity";
+"runtime.reserve_group" = "Quota reserve";
+"runtime.keep_at_least" = "Keep at least";
+"runtime.reserve_accessibility" = "Quota reserve percentage";
+"runtime.reserve_stepper" = "Zero to fifty percent · step one";
+"runtime.reserve_zero_warning" = "Reserve is off: all available quota may be used. No allowance is kept for other tasks.";
+"runtime.reserve_low_warning" = "Low reserve: less quota remains for other tasks. Concurrent requests may use quota before usage figures update.";
+"runtime.reserve_default_note" = "Default is fifteen percent. Quota is still checked before requests.";
+"runtime.fast_enable" = "Enable Fast";
+"runtime.fast_remember_title" = "Keep Fast on after restart?";
+"runtime.fast_remember_body" = "You have confirmed Fast at least three times. You can remember this choice. Quota will continue to be used faster; turning off the switch cancels the persistent setting.";
+"runtime.fast_until_close" = "Until this app closes";
+"runtime.fast_always" = "Always enable";
+"runtime.fast_enable_error" = "Fast was not enabled because the new setting could not be saved.";
+
+/* Terms, startup and local media preview */
+"media.next_cue" = "New cue. Select “Play clip”.";
+"media.saved_unavailable" = "The saved video is unavailable. Choose it again; another video will not be selected automatically.";
+"media.not_found" = "No nearby video found. Select “Choose video…”.";
+"media.multiple_found" = "Several videos found. Choose the original recording.";
+"media.reading_video" = "Reading video and audio tracks locally…";
+"media.read_timeout" = "Reading the video timed out. Try a short local clip or another file.";
+"media.one_track" = "One audio track. Listen to confirm it is the German original.";
+"media.choose_german_audio" = "Choose the German original track and listen to confirm it. Language tags may be missing or wrong.";
+"media.native_codec" = "macOS could not read this video codec. A short local clip requires installed ffmpeg and ffprobe; choose their folder.";
+"media.ffmpeg_required" = "MKV or unsupported codecs require installed ffmpeg and ffprobe. Choose their folder; nothing is downloaded.";
+"media.prepare_timeout" = "Video preparation timed out. The original was not changed.";
+"media.preparing_short" = "Preparing only a short MP4 clip, not the full lecture…";
+"media.short_ready" = "Short local clip · original unchanged.";
+"media.original_ready" = "Original video without re-encoding · selected audio only.";
+"media.play_failed" = "macOS could not display the video. %@";
+"media.cancelled" = "Preparation cancelled. You can try again.";
+"media.pick_video" = "Choose original video";
+"media.tools_not_found" = "The folder does not contain both executables: ffmpeg and ffprobe.";
+"listen.prepare_audio_failed" = "Could not prepare audio playback.";
+"listen.play_audio_failed" = "macOS could not start playback.";
+"listen.clip_range" = "Clip %1$@–%2$@ · on this Mac only";
+"startup.version_unknown" = "unknown";
+"media.try_short_hint" = "Select “Short local clip” to try another codec.";

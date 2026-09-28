@@ -1,0 +1,11 @@
+.DS_Store
+.ai-dev/
+.build/
+/dist/
+/releases/
+/archive/
+Tests/Pilot/
+Tests/QueuePilot/
+Tests/SpeechPilot/
+*.zip
+*.lectureproject
