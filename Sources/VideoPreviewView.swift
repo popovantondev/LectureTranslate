@@ -296,7 +296,7 @@ private struct VideoPreviewView: View {
                     .help(L10n.current("media.short_clip_help"))
                 Spacer(); Button(L10n.current("media.ffmpeg")) { session.chooseTools() }.disabled(session.busy)
             }.font(.caption)
-        }.padding(14).frame(minWidth: 500, minHeight: 470).tint(.teal)
+        }.padding(14).frame(minWidth: 500, minHeight: 470).tint(TranslatorTheme.accent)
     }
 }
 
