@@ -216,7 +216,7 @@ struct QueueAccessView: View {
             .background(.background, in: RoundedRectangle(cornerRadius: 18))
             .padding(32).frame(maxWidth: .infinity, minHeight: 420)
         }
-        .tint(.teal).frame(minWidth: 780, minHeight: 460)
+        .tint(TranslatorTheme.accent).frame(minWidth: 780, minHeight: 460)
         .task { await model.refreshQueueAccess(automaticallyFocus: true) }
         .onReceive(NSWorkspace.shared.notificationCenter.publisher(for: NSWorkspace.didTerminateApplicationNotification)) { _ in
             guard inUse, !model.writable else { return }

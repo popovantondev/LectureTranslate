@@ -251,7 +251,7 @@ struct RuntimeSettingsView: View {
                     onSave(draftPreferences, draftReserve)
                 }.keyboardShortcut(.defaultAction).buttonStyle(.borderedProminent)
             }
-        }.padding(24).frame(width: 550).tint(.teal)
+        }.padding(24).frame(width: 550).tint(TranslatorTheme.accent)
     }
 
     private struct ConcurrencyExplanation: View {
