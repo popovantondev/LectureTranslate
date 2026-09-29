@@ -1,6 +1,6 @@
 # LectureTranslate
 
-![LectureTranslate — globe to RU icon](Assets/TranslatorIcon.png)
+<img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
 
 **Deutsch** · [Русский](docs/ru/README.md) · [English](docs/en/README.md)
 
