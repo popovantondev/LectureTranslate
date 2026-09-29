@@ -1,5 +1,7 @@
 # LectureTranslate
 
+[User guide](https://popovantondev.github.io/LectureTranslate/Guide-en.html)
+
 <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
 
 **Deutsch** · [Русский](docs/ru/README.md) · [English](docs/en/README.md)

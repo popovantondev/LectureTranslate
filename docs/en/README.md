@@ -1,5 +1,7 @@
 # LectureTranslate · User guide
 
+[User guide](https://popovantondev.github.io/LectureTranslate/Guide-en.html)
+
 [German](../de/README.md) · [Russian](../ru/README.md) · [English](README.md)
 
 **Version 3.5.1 · build 16.** The local release candidate was checked with synthetic data and isolated GUI scenarios. A download link will appear on the project overview after the verified GitHub release is published.
