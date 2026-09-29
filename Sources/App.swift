@@ -454,13 +454,13 @@ final class TranslatorModel: ObservableObject {
 enum TranslatorTheme {
     static let accent = Color(nsColor: NSColor(name: nil) { appearance in
         appearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
-            ? NSColor(srgbRed: 0.24, green: 0.84, blue: 0.77, alpha: 1)
-            : NSColor(srgbRed: 0.02, green: 0.43, blue: 0.46, alpha: 1)
+            ? NSColor(srgbRed: 0.61, green: 0.77, blue: 1.0, alpha: 1)
+            : NSColor(srgbRed: 0.027, green: 0.365, blue: 0.82, alpha: 1)
     })
     static let wash = Color(nsColor: NSColor(name: nil) { appearance in
         appearance.bestMatch(from: [.darkAqua, .aqua]) == .darkAqua
-            ? NSColor(srgbRed: 0.08, green: 0.12, blue: 0.13, alpha: 1)
-            : NSColor(srgbRed: 0.96, green: 0.98, blue: 0.98, alpha: 1)
+            ? NSColor(srgbRed: 0.027, green: 0.09, blue: 0.18, alpha: 1)
+            : NSColor(srgbRed: 0.953, green: 0.965, blue: 0.984, alpha: 1)
     })
 }
 
