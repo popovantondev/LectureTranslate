@@ -4,11 +4,11 @@
 
 [German](../de/README.md) · [Russian](../ru/README.md) · [English](README.md)
 
-**Version 3.5.1 · build 16.** The local release candidate was checked with synthetic data and isolated GUI scenarios. A download link will appear on the project overview after the verified GitHub release is published.
+**Version 3.5.1 · build 16.** The release is published. The existing checks use synthetic data and isolated GUI scenarios. [Download release 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1).
 
 LectureTranslate is a native macOS app for translating German lecture subtitles (`.srt`) into Russian. Cue IDs and timecodes are preserved. It provides a pausable, resumable queue, local review notes, and export as `name.ru.srt`.
 
-**Requirements:** macOS 15 or later on Apple Silicon (arm64). Translation and review require a separate connection and sign-in to an external translation service. See the technical documentation for setup. FFmpeg/ffprobe are optional for specific local media features.
+**Requirements:** macOS 15 or later on Apple Silicon (arm64). Translation and review require a separate connection and sign-in to an external translation service. Setup: [BUILD.md](BUILD.md). FFmpeg/ffprobe are optional for specific local media features.
 
 ## Screenshots
 
