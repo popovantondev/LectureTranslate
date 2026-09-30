@@ -99,12 +99,12 @@ enum QuotaConnectionTests {
         func logLines(_ url: URL) -> [String] { ((try? String(contentsOf: url, encoding: .utf8)) ?? "").split(separator: "\n").map(String.init) }
         func count(_ method: String, _ url: URL) -> Int { logLines(url).filter { $0.contains("\"method\":\"\(method)\"") }.count }
         func starts(_ url: URL) -> Int { logLines(url).filter { $0.hasPrefix("start ") }.count }
-        func waitForRequest(_ log: URL) async throws {
+        func waitForRequest(_ log: URL, method: String = "account/rateLimits/read") async throws {
             let deadline = ProcessInfo.processInfo.systemUptime + 2
-            while count("account/rateLimits/read", log) == 0 && ProcessInfo.processInfo.systemUptime < deadline {
+            while count(method, log) == 0 && ProcessInfo.processInfo.systemUptime < deadline {
                 try await Task.sleep(nanoseconds: 10_000_000)
             }
-            check(count("account/rateLimits/read", log) > 0, "fixture reached a read before cancellation/invalidation")
+            check(count(method, log) > 0, "fixture reached the requested protocol phase before cancellation/invalidation")
         }
         func rejects(_ mode: String, timeout: Double = 2) async -> (String, Double, URL) {
             let (connection, log) = make(mode, timeout: timeout)
@@ -247,7 +247,7 @@ enum QuotaConnectionTests {
         let (shutdownConnection, shutdownLog) = make("hang", timeout: 4)
         let shutdownService = SharedQuotaService(connection: shutdownConnection)
         let waiter = Task { try await shutdownService.read() }
-        try await Task.sleep(nanoseconds: 100_000_000)
+        try await waitForRequest(shutdownLog, method: "initialize")
         let shutdownStart = ProcessInfo.processInfo.systemUptime
         await shutdownService.shutdown()
         do { _ = try await waiter.value; check(false, "shutdown waiter must cancel") }
