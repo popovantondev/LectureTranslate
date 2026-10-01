@@ -1,6 +1,22 @@
 # LectureTranslate · User guide
 
-[User guide](https://popovantondev.github.io/LectureTranslate/Guide-en.html)
+<!-- public-release:start -->
+Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review.
+
+**macOS 15+ · Apple Silicon · Release 3.5.1**
+
+**[Download](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)** · **[User guide](https://popovantondev.github.io/LectureTranslate/Guide-en.html)** · **[Report a problem](https://github.com/popovantondev/LectureTranslate/issues/new/choose)**
+
+**Requirements and limitations:** Requires a separate connection and sign-in to an external translation service. FFmpeg/ffprobe are optional for specific media features.
+
+**First steps:** Extract the app archive, configure the connection using the guide and add German .srt files. Review translations before use.
+
+**Application files:**
+
+- [`lecture_translate-v3.5.1-app.zip`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/lecture_translate-v3.5.1-app.zip)
+
+**Checksums:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
+<!-- public-release:end -->
 
 [German](../de/README.md) · [Russian](../ru/README.md) · [English](README.md)
 

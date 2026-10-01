@@ -1,6 +1,22 @@
 # LectureTranslate · Руководство пользователя
 
-[Руководство пользователя](https://popovantondev.github.io/LectureTranslate/Guide-ru.html)
+<!-- public-release:start -->
+Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.
+
+**macOS 15+ · Apple Silicon · Выпуск 3.5.1**
+
+**[Скачать](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)** · **[Инструкция](https://popovantondev.github.io/LectureTranslate/Guide-ru.html)** · **[Сообщить об ошибке](https://github.com/popovantondev/LectureTranslate/issues/new/choose)**
+
+**Требования и ограничения:** Нужны отдельное подключение и вход во внешний сервис перевода. FFmpeg/ffprobe необязательны для отдельных медиафункций.
+
+**Первые шаги:** Распакуйте архив приложения, настройте подключение по руководству и добавьте немецкие .srt. Проверяйте перевод перед использованием.
+
+**Файлы приложения:**
+
+- [`lecture_translate-v3.5.1-app.zip`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/lecture_translate-v3.5.1-app.zip)
+
+**Контрольные суммы:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
+<!-- public-release:end -->
 
 [Немецкая версия](../de/README.md) · [Русская версия](README.md) · [Английская версия](../en/README.md)
 

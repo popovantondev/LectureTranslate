@@ -1,0 +1,84 @@
+{
+  "name": "LectureTranslate",
+  "version": "3.5.1",
+  "platform": "macOS 15+ · Apple Silicon",
+  "tag": "v3.5.1",
+  "description": {
+    "ru": "Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.",
+    "de": "Übersetzt deutsche SRT-Untertitel ins Russische mit Zeitcodes, Warteschlange und Entwurfsprüfung.",
+    "en": "Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review."
+  },
+  "requirements": {
+    "ru": "Нужны отдельное подключение и вход во внешний сервис перевода. FFmpeg/ffprobe необязательны для отдельных медиафункций.",
+    "de": "Separate Verbindung und Anmeldung beim externen Übersetzungsdienst nötig. FFmpeg/ffprobe sind für einzelne Medienfunktionen optional.",
+    "en": "Requires a separate connection and sign-in to an external translation service. FFmpeg/ffprobe are optional for specific media features."
+  },
+  "start": {
+    "ru": "Распакуйте архив приложения, настройте подключение по руководству и добавьте немецкие .srt. Проверяйте перевод перед использованием.",
+    "de": "App-Archiv entpacken, Verbindung nach Anleitung einrichten und deutsche .srt hinzufügen. Übersetzungen vor Verwendung prüfen.",
+    "en": "Extract the app archive, configure the connection using the guide and add German .srt files. Review translations before use."
+  },
+  "schema_version": 1,
+  "repo": "LectureTranslate",
+  "source_url": "https://github.com/popovantondev/LectureTranslate",
+  "readmes": {
+    "de": [
+      "README.md",
+      "docs/de/README.md"
+    ],
+    "en": [
+      "docs/en/README.md"
+    ],
+    "ru": [
+      "docs/ru/README.md"
+    ]
+  },
+  "guides": {
+    "ru": "Guide-ru.html",
+    "de": "Guide-de.html",
+    "en": "Guide-en.html"
+  },
+  "help_url": "https://popovantondev.github.io/LectureTranslate/Guide-{lang}.html",
+  "feedback_url": "https://github.com/popovantondev/LectureTranslate/issues/new/choose",
+  "status": "release",
+  "release_url": "https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1",
+  "assets": [
+    {
+      "name": "lecture_translate-v3.5.1-app.zip",
+      "size": 3853130,
+      "url": "https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/lecture_translate-v3.5.1-app.zip"
+    },
+    {
+      "name": "lecture_translate-v3.5.1-source.zip",
+      "size": 11930708,
+      "url": "https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/lecture_translate-v3.5.1-source.zip"
+    },
+    {
+      "name": "manifest.json",
+      "size": 3766,
+      "url": "https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/manifest.json"
+    },
+    {
+      "name": "RELEASE.md",
+      "size": 1585,
+      "url": "https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/RELEASE.md"
+    },
+    {
+      "name": "SHA256SUMS",
+      "size": 358,
+      "url": "https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS"
+    }
+  ],
+  "downloads": [
+    "lecture_translate-v3.5.1-app.zip"
+  ],
+  "checksums": [
+    "SHA256SUMS"
+  ],
+  "version_files": [
+    {
+      "path": "VERSION",
+      "pattern": "^\\s*(\\S+)\\s*$"
+    }
+  ]
+}
