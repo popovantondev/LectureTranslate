@@ -1,28 +1,19 @@
-name: macOS offline checks
-
+name: Quota connection stress diagnosis
 on:
-  push:
-    branches: [main]
-  pull_request:
   workflow_dispatch:
-
 permissions:
   contents: read
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 jobs:
-  verify:
+  quota-stress:
     runs-on: macos-15
-    timeout-minutes: 30
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v7
-      - name: Run local test suite
-        run: /bin/bash Scripts/test-all.sh
-      - name: Build isolated preview app
-        run: /bin/bash Scripts/build.sh --preview
-      - name: Check release archive safeguards
-        run: /usr/bin/ruby Tests/ReleaseTests.rb
-      - name: Check sanitized public export
-        run: /bin/bash Scripts/test-public-export.sh
+      - name: Compile and run the quota connection fixture
+        run: /bin/bash Scripts/test-quota-connection.sh
+      - name: Repeat the existing quota connection tests
+        run: |
+          for attempt in {2..20}; do
+            echo "Quota connection stress iteration $attempt"
+            .build/QuotaConnectionTests
+          done

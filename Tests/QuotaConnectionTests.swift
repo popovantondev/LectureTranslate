@@ -163,7 +163,7 @@ enum QuotaConnectionTests {
         let oversized = await rejects("oversized")
         check(starts(oversized.2) == 1 && oversized.0.contains("большой"), "oversized frame is rejected with a bounded buffer: \(oversized.0)")
         let timeout = await rejects("hang", timeout: 0.15)
-        check(timeout.1 < 1.25 && timeout.0.contains("Истекло время") && starts(timeout.2) == 1, "deadline is bounded even for a SIGTERM-ignoring process")
+        check(timeout.1 < 1.25 && timeout.0.contains("Истекло время") && starts(timeout.2) == 1, "deadline is bounded even for a SIGTERM-ignoring process: elapsed=\(timeout.1), timedOut=\(timeout.0.contains("Истекло время")), starts=\(starts(timeout.2)), initialize=\(count("initialize", timeout.2))")
         let zeroTimeout = await rejects("normal", timeout: 0)
         let infiniteTimeout = await rejects("normal", timeout: .infinity)
         check(starts(zeroTimeout.2) == 0 && starts(infiniteTimeout.2) == 0, "invalid timeout does not launch a child")
