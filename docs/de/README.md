@@ -1,6 +1,22 @@
 # LectureTranslate · Benutzerhandbuch
 
-[Benutzerhandbuch](https://popovantondev.github.io/LectureTranslate/Guide-de.html)
+<!-- public-release:start -->
+Übersetzt deutsche SRT-Untertitel ins Russische mit Zeitcodes, Warteschlange und Entwurfsprüfung.
+
+**macOS 15+ · Apple Silicon · Release 3.5.1**
+
+**[Herunterladen](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)** · **[Anleitung](https://popovantondev.github.io/LectureTranslate/Guide-de.html)** · **[Fehler melden](https://github.com/popovantondev/LectureTranslate/issues/new/choose)**
+
+**Voraussetzungen und Grenzen:** Separate Verbindung und Anmeldung beim externen Übersetzungsdienst nötig. FFmpeg/ffprobe sind für einzelne Medienfunktionen optional.
+
+**Erste Schritte:** App-Archiv entpacken, Verbindung nach Anleitung einrichten und deutsche .srt hinzufügen. Übersetzungen vor Verwendung prüfen.
+
+**App-Dateien:**
+
+- [`lecture_translate-v3.5.1-app.zip`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/lecture_translate-v3.5.1-app.zip)
+
+**Prüfsummen:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
+<!-- public-release:end -->
 
 [Deutsch](README.md) · [Russisch](../ru/README.md) · [Englisch](../en/README.md) · [Zur Projektübersicht](../../README.md)
 
