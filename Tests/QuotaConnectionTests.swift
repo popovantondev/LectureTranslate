@@ -21,6 +21,7 @@ enum QuotaConnectionTests {
         STDOUT.sync = true
         STDERR.sync = true
         mode, log = ARGV
+        sleep 30 if mode == 'slow-start'
         File.open(log, 'a') { |f| f.puts "start #{Process.pid}" }
         starts = File.readlines(log).grep(/^start /).length
         if mode == 'noisy'
@@ -43,6 +44,7 @@ enum QuotaConnectionTests {
           when 'initialize'
             if mode == 'hang'
               Signal.trap('TERM', 'IGNORE')
+              File.open(log, 'a') { |f| f.puts 'ready hang' }
               sleep 30
             elsif mode == 'rpc-error'
               send_json.call({'id'=>request['id'], 'error'=>{'code'=>-32000, 'message'=>'Not logged in; run codex login'}})
@@ -106,6 +108,13 @@ enum QuotaConnectionTests {
             }
             check(count(method, log) > 0, "fixture reached the requested protocol phase before cancellation/invalidation")
         }
+        func waitForHang(_ log: URL) async throws {
+            let deadline = ProcessInfo.processInfo.systemUptime + 2
+            while !logLines(log).contains("ready hang") && ProcessInfo.processInfo.systemUptime < deadline {
+                try await Task.sleep(nanoseconds: 10_000_000)
+            }
+            check(logLines(log).contains("ready hang"), "fixture ignores SIGTERM before cancellation/shutdown")
+        }
         func rejects(_ mode: String, timeout: Double = 2) async -> (String, Double, URL) {
             let (connection, log) = make(mode, timeout: timeout)
             defer { connection.shutdown() }
@@ -162,15 +171,21 @@ enum QuotaConnectionTests {
               "large stderr is drained into a bounded, redacted diagnostic tail")
         let oversized = await rejects("oversized")
         check(starts(oversized.2) == 1 && oversized.0.contains("большой"), "oversized frame is rejected with a bounded buffer: \(oversized.0)")
-        let timeout = await rejects("hang", timeout: 0.15)
-        print("Timeout fixture: elapsed=\(timeout.1), starts=\(starts(timeout.2)), initialize=\(count("initialize", timeout.2))")
-        check(timeout.1 < 1.25 && timeout.0.contains("Истекло время") && starts(timeout.2) == 1, "deadline is bounded even for a SIGTERM-ignoring process: elapsed=\(timeout.1), timedOut=\(timeout.0.contains("Истекло время")), starts=\(starts(timeout.2)), initialize=\(count("initialize", timeout.2))")
+        // A short deadline may expire before the interpreter records startup.
+        // Verify that valid outcome separately from a ready, SIGTERM-ignoring child.
+        let coldTimeout = await rejects("slow-start", timeout: 0.15)
+        check(coldTimeout.1 < 1.25 && coldTimeout.0.contains("Истекло время") && starts(coldTimeout.2) == 0,
+              "short deadline is bounded before fixture startup: elapsed=\(coldTimeout.1), starts=\(starts(coldTimeout.2))")
+        let timeout = await rejects("hang", timeout: 1)
+        check(logLines(timeout.2).contains("ready hang"), "timeout case reaches the SIGTERM-ignoring fixture")
+        check(timeout.1 < 2.1 && timeout.0.contains("Истекло время") && starts(timeout.2) == 1,
+              "deadline plus cleanup remains bounded for a SIGTERM-ignoring process: elapsed=\(timeout.1), starts=\(starts(timeout.2))")
         let zeroTimeout = await rejects("normal", timeout: 0)
         let infiniteTimeout = await rejects("normal", timeout: .infinity)
         check(starts(zeroTimeout.2) == 0 && starts(infiniteTimeout.2) == 0, "invalid timeout does not launch a child")
         let (cancelConnection, cancelLog) = make("hang", timeout: 4)
         let cancelledTask = Task { try await cancelConnection.read() }
-        try await waitForRequest(cancelLog, method: "initialize")
+        try await waitForHang(cancelLog)
         let cancelStart = ProcessInfo.processInfo.systemUptime
         cancelledTask.cancel()
         do { _ = try await cancelledTask.value; check(false, "cancel must throw") }
@@ -248,7 +263,7 @@ enum QuotaConnectionTests {
         let (shutdownConnection, shutdownLog) = make("hang", timeout: 4)
         let shutdownService = SharedQuotaService(connection: shutdownConnection)
         let waiter = Task { try await shutdownService.read() }
-        try await waitForRequest(shutdownLog, method: "initialize")
+        try await waitForHang(shutdownLog)
         let shutdownStart = ProcessInfo.processInfo.systemUptime
         await shutdownService.shutdown()
         do { _ = try await waiter.value; check(false, "shutdown waiter must cancel") }
