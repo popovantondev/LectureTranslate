@@ -13,7 +13,7 @@ jobs:
         run: /bin/bash Scripts/test-quota-connection.sh
       - name: Repeat the existing quota connection tests
         run: |
-          for attempt in {2..20}; do
+          for attempt in {2..50}; do
             echo "Quota connection stress iteration $attempt"
             .build/QuotaConnectionTests
           done
