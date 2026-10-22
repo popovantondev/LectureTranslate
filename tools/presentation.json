@@ -1,0 +1,32 @@
+{
+  "folder": ".",
+  "shots": {
+    "ru": "docs/screenshots/ru/light-large.png",
+    "de": "docs/screenshots/de/light-large.png",
+    "en": "docs/screenshots/en/light-large.png"
+  },
+  "icon": "presentation-icon.png",
+  "palette": {
+    "accent": "#7150a5",
+    "tint": "#f0ebf9",
+    "hero": "#30224b",
+    "hero-end": "#655085"
+  },
+  "flow": {
+    "ru": [
+      "Открыть SRT",
+      "Подключить сервис перевода",
+      "Сохранить перевод SRT"
+    ],
+    "de": [
+      "SRT öffnen",
+      "Übersetzungsdienst verbinden",
+      "Übersetzte SRT speichern"
+    ],
+    "en": [
+      "Open SRT",
+      "Connect a translation service",
+      "Save translated SRT"
+    ]
+  }
+}
