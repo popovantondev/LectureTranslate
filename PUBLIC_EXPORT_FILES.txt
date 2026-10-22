@@ -132,3 +132,12 @@ docs/screenshots/ru/dark-large.png
 docs/screenshots/ru/light-compact.png
 docs/screenshots/ru/light-large.png
 Проверить.command
+guide-polish.css
+index-de.html
+index-en.html
+index-ru.html
+presentation-icon.png
+presentation.css
+tools/build_presentation.py
+tools/polish_guides.py
+tools/presentation.json
