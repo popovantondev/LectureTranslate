@@ -657,7 +657,7 @@
       "sha256": "04fbb74100a4f8a4bb10877abc5b20c2051de2f2154d4d3bbffec40630f48fde"
     },
     {
-      "path": "Проверить.command",
+      "path": "run-checks.command",
       "bytes": 977,
       "sha256": "d54aec84d23ea8db4745f6beab317b38574366eaf957d2b4c2a1b15ff8263332"
     }

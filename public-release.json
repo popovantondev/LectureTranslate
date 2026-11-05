@@ -27,9 +27,11 @@
       "docs/de/README.md"
     ],
     "en": [
+      "README.en.md",
       "docs/en/README.md"
     ],
     "ru": [
+      "README.ru.md",
       "docs/ru/README.md"
     ]
   },

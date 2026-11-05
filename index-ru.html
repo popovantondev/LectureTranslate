@@ -1,10 +1,83 @@
 <!doctype html>
-<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика."><title>LectureTranslate — Руководство · Выпуск · 3.5.1</title><link rel="icon" href="presentation-icon.png"><link rel="stylesheet" href="presentation.css?v=20261022"></head>
-<body style="--accent:#7150a5;--tint:#f0ebf9;--hero:#30224b;--hero-end:#655085"><div class="shell"><header class="top"><a class="brand" href="index-ru.html"><img src="presentation-icon.png" width="44" height="44" alt="">LectureTranslate</a><div class="navigation"><a class="catalog-link" href="https://popovantondev.github.io/popovantondev/index-ru.html">← Все программы</a><nav class="languages" aria-label="Language"><a href="index-ru.html" lang="ru" hreflang="ru" aria-current="page">RU</a><a href="index-de.html" lang="de" hreflang="de">DE</a><a href="index-en.html" lang="en" hreflang="en">EN</a></nav></div></header>
-<main id="content"><section class="product-hero"><div class="copy"><p class="eyebrow">macOS 15+ · Apple Silicon</p><h1>LectureTranslate</h1><p class="lead">Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.</p><span class="status release">Выпуск · 3.5.1</span><div class="actions"><a class="button primary" href="https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1">Скачать для macOS</a><a class="button" href="Guide-ru.html">Руководство ↗</a></div><p class="requirements"><strong>Перед запуском</strong>Нужны отдельное подключение и вход во внешний сервис перевода. FFmpeg/ffprobe необязательны для отдельных медиафункций.</p></div><figure class="preview"><a href="docs/screenshots/ru/light-large.png"><img src="docs/screenshots/ru/light-large.png" alt="LectureTranslate — Демонстрационный интерфейс с искусственными данными. Открыть изображение целиком." decoding="async"></a><figcaption>Демонстрационный интерфейс с искусственными данными. Открыть изображение целиком.</figcaption></figure></section>
-<section class="process" aria-labelledby="process-title"><h2 id="process-title">Как это работает</h2><ol class="flow"><li>Открыть SRT</li><li>Подключить сервис перевода</li><li>Сохранить перевод SRT</li></ol></section><section class="process"><h2>Учебный пример SRT · не результат живого запроса</h2><div class="srt-example"><pre><code>1
-00:00:01,000 --&gt; 00:00:04,000
-Guten Morgen. Heute besprechen wir Netzwerke.</code></pre><span aria-hidden="true">→</span><pre><code>1
-00:00:01,000 --&gt; 00:00:04,000
-Доброе утро. Сегодня мы обсуждаем сети.</code></pre></div></section><section class="start"><div><h2>Первые шаги</h2><p>Распакуйте архив приложения, настройте подключение по руководству и добавьте немецкие .srt. Проверяйте перевод перед использованием.</p></div><div class="actions"><a class="button" href="Guide-ru.html">Руководство →</a></div></section></main>
-<footer><span>LectureTranslate · Выпуск · 3.5.1</span><nav><a href="https://github.com/popovantondev/LectureTranslate">GitHub ↗</a><a href="https://github.com/popovantondev/LectureTranslate/issues/new/choose">Сообщить о проблеме</a><a href="https://github.com/popovantondev/LectureTranslate#readme">Условия использования</a><a href="https://popovantondev.github.io/popovantondev/index-ru.html">Все программы</a></nav></footer></div></body></html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="description" content="Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.">
+<title>LectureTranslate — Руководство · Выпуск · 3.5.1</title>
+<link rel="icon" href="presentation-icon.png">
+<script src="Assets/kit/kit-theme.js"></script><link rel="stylesheet" href="Assets/kit/kit.css?v=2026.11.05-1"><script src="Assets/kit/programs.js?v=2026.11.05-1" defer></script><script src="Assets/kit/kit.js?v=2026.11.05-1" defer></script>
+<link rel="stylesheet" href="presentation.css?v=2026.11.05-1">
+</head>
+<body class="ppk-page">
+<a class="ppk-skip" href="#main">К содержимому</a>
+<div class="ppk-nav-wrap" id="ppk-nav-wrap">
+  <nav class="ppk-nav" aria-label="Основная навигация">
+    <a class="ppk-brand" href="index-ru.html"><img src="presentation-icon.png" alt="" width="34" height="34"><span>LectureTranslate</span></a>
+    <span class="ppk-spacer"></span>
+    <a class="ppk-back" href="https://popovantondev.github.io/popovantondev/index-ru.html">← Все программы</a>
+    <button class="ppk-search-btn" type="button" data-ppk-open-search aria-label="Поиск по программам"><span>Поиск</span><kbd>Ctrl K</kbd></button>
+    <div class="ppk-langs"><a href="index-ru.html" lang="ru" hreflang="ru" aria-current="page">RU</a><a href="index.html" lang="de" hreflang="de">DE</a><a href="index-en.html" lang="en" hreflang="en">EN</a></div>
+    <button class="ppk-icon-btn ppk-theme-btn" type="button" data-ppk-theme aria-label="Сменить тему"></button>
+    <a class="ppk-icon-btn ppk-gh-btn" href="https://github.com/popovantondev/LectureTranslate" aria-label="GitHub"></a>
+  </nav>
+</div>
+<main class="ppk-shell" id="main">
+<div class="ppk-hero">
+<div>
+<a class="ppk-pill" href="https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1"><span class="ppk-new">НОВОЕ</span><span>Вышла версия 3.5.1</span> <span class="ppk-more">Что нового →</span></a>
+<h1>LectureTranslate</h1>
+<p class="ppk-lead">Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.</p>
+<span class="ppk-status">Выпуск · 3.5.1</span> <span class="ppk-chip ppk-meta-chip">macOS 15+ · Apple Silicon</span>
+<div class="ppk-actions">
+<a class="ppk-btn ppk-btn-primary" href="https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1">Скачать для macOS</a>
+<a class="ppk-btn ppk-btn-gh" href="https://github.com/popovantondev/LectureTranslate">Исходный код <span class="ppk-chip"><i class="ppk-dot"></i>Swift · SwiftUI</span></a>
+<a class="ppk-btn" href="Guide-ru.html">Руководство ↗</a>
+</div>
+<p class="ppk-requirements"><strong>Перед запуском</strong>Нужны отдельное подключение и вход во внешний сервис перевода. FFmpeg/ffprobe необязательны для отдельных медиафункций.</p>
+
+</div>
+<figure class="ppk-preview">
+<div class="ppk-stage"><a href="docs/screenshots/ru/light-large.png"><img src="docs/screenshots/ru/light-large.png" alt="LectureTranslate — Демонстрационный интерфейс с искусственными данными. Открыть изображение целиком." decoding="async"></a></div>
+<figcaption>Демонстрационный интерфейс с искусственными данными. Открыть изображение целиком.</figcaption>
+</figure>
+</div>
+
+<section class="ppk-bento-section ppk-section ppk-reveal">
+<h2>Что внутри</h2>
+<p class="ppk-sub">Установка, функции, передача данных и проверка.</p>
+<div class="ppk-bento">
+<div class="ppk-tile ppk-wide"><h3>Установка</h3><p>Шаги из «Первых шагов» и инструкции по сборке, в Терминале.</p><div class="ppk-term" role="group" aria-label="Установка"><div class="ppk-term-bar"><i></i><i></i><i></i></div><div class="ppk-term-out"><div class="ppk-ps">$ shasum -a 256 lecture_translate-v3.5.1-app.zip</div><div class="ppk-dim"># Сверить значение с SHA256SUMS из релиза</div><div class="ppk-ps">$ unzip lecture_translate-v3.5.1-app.zip</div><div class="ppk-dim"># Приложение не нотаризовано: при первом открытии macOS может предупредить</div><div class="ppk-dim"># Настроить подключение к сервису перевода по руководству</div><div class="ppk-ok">→ Добавить немецкие .srt, выбрать профиль, запустить очередь</div></div></div></div>
+<div class="ppk-tile"><h3>Внешний сервис</h3><p>Перевод и проверка идут через внешний сервис: тексты субтитров передаются по выполненному входу. Очередь, журналы и проекты остаются локально на Mac.</p><div class="ppk-chips"><span>Нужен вход</span><span>Тексты уходят сервису</span></div></div>
+<div class="ppk-tile"><h3>Функции</h3><div class="ppk-chips"><span>Немецкий → русский</span><span>Номера реплик и таймкоды сохраняются</span><span>Очередь с паузой</span><span>Черновик и проверка выбранных рискованных мест</span><span>Локальные подсказки по числам и единицам</span><span>Файлы проектов (.lectureproject)</span><span>Просмотр исходного видео</span><span>Экспорт как name.ru.srt</span><span>Интерфейс DE · RU · EN</span></div></div>
+<div class="ppk-tile ppk-wide"><h3>Проверено</h3><ul class="ppk-checks"><li>Автоматические проверки в GitHub Actions (macOS 15): тесты, предварительная сборка, проверки релиза и экспорта</li><li>По данным проекта — 2473 локальные офлайн-проверки, в том числе 14 проверок релиза</li><li>Проверены двенадцать синтетических демо-окон (3 языка × 2 темы × 2 размера)</li><li>Контрольные суммы SHA-256 (SHA256SUMS) и manifest.json в релизе</li><li>Версия 3.5.1 и журнал изменений</li></ul></div>
+</div>
+</section>
+
+<section class="ppk-section ppk-process ppk-reveal" aria-labelledby="process-title">
+<h2 id="process-title">Как это работает</h2>
+<ol class="ppk-flow"><li>Открыть SRT</li><li>Подключить сервис перевода</li><li>Сохранить перевод SRT</li></ol>
+</section>
+<section class="ppk-section ppk-demo-section ppk-reveal" id="demo" data-demo="lecturetranslate" aria-labelledby="demo-title">
+<h2 id="demo-title">Попробовать в браузере</h2>
+<p class="ppk-sub">Пример из файлов репозитория: немецкие субтитры до перевода и русские после. Таймкоды не меняются.</p>
+<div class="ppk-demo"><div class="ppk-demo-head"><span>Lecture Translate</span><span class="ppk-demo-label">Демо — примерные данные</span></div>
+<div class="ppk-demo-body"><div class="ppk-demo-main"><noscript><p class="ppk-demo-empty">Для демо нужен JavaScript.</p><ol class="demo-cues"><li><code>00:00:01,000 --&gt; 00:00:04,500</code><p lang="de">Heute sprechen wir über Heilpflanzen.</p><p lang="ru">Сегодня мы говорим о лекарственных
+растениях.</p></li><li><code>00:00:04,500 --&gt; 00:00:08,000</code><p lang="de">Nicht jede Pflanze ist für jeden Menschen geeignet.</p><p lang="ru">Не каждое растение подходит каждому
+человеку.</p></li><li><code>00:00:08,200 --&gt; 00:00:12,000</code><p lang="de">In diesem Beispiel steht die Angabe 5 ml.</p><p lang="ru">В этом примере указано пять миллилитров.</p></li></ol></noscript></div></div></div>
+<p class="ppk-notice">Пример на искусственных данных, не результат живого запроса. В приложении перевод выполняет внешний сервис.</p>
+<script type="application/json" id="demo-data">{"labels": {"title": "Попробовать в браузере", "sub": "Пример из файлов репозитория: немецкие субтитры до перевода и русские после. Таймкоды не меняются.", "label": "Демо — примерные данные", "source": "Источник", "target": "Результат", "translate": "Перевести", "reset": "Сбросить", "hint": "Нажмите «Перевести», чтобы увидеть готовый пример результата.", "done": "✓ Готово: 3 реплики, все таймкоды без изменений. (Демо — готовый пример, не настоящий перевод.)", "pending": "ещё не переведено", "same": "таймкод совпадает", "mark": "Отметить таймкод", "nojs": "Для демо нужен JavaScript.", "cues": "Реплики", "before": "Немецкий оригинал (.srt)", "after": "Русский перевод (name.ru.srt)", "note": "Пример на искусственных данных, не результат живого запроса. В приложении перевод выполняет внешний сервис.", "sourceName": "Beispiel.de.srt", "targetName": "Beispiel.ru.srt"}, "before": [{"n": "7", "t": "00:00:01,000 --> 00:00:04,500", "x": "Heute sprechen wir über Heilpflanzen."}, {"n": "11", "t": "00:00:04,500 --> 00:00:08,000", "x": "Nicht jede Pflanze ist für jeden Menschen geeignet."}, {"n": "15", "t": "00:00:08,200 --> 00:00:12,000", "x": "In diesem Beispiel steht die Angabe 5 ml."}], "after": [{"n": "7", "t": "00:00:01,000 --> 00:00:04,500", "x": "Сегодня мы говорим о лекарственных\nрастениях."}, {"n": "11", "t": "00:00:04,500 --> 00:00:08,000", "x": "Не каждое растение подходит каждому\nчеловеку."}, {"n": "15", "t": "00:00:08,200 --> 00:00:12,000", "x": "В этом примере указано пять миллилитров."}]}</script>
+</section>
+<section class="ppk-section ppk-start ppk-reveal">
+<div><h2>Первые шаги</h2><p>Распакуйте архив приложения, настройте подключение по руководству и добавьте немецкие .srt. Проверяйте перевод перед использованием.</p></div>
+<div class="ppk-actions"><a class="ppk-btn" href="Guide-ru.html">Руководство →</a></div>
+</section>
+</main>
+<footer class="ppk-footer">
+  <span>© 2026 Anton Popov · LectureTranslate 3.5.1</span>
+  <nav aria-label="Правовая информация"><a href="https://popovantondev.github.io/popovantondev/impressum.html">Impressum</a><a href="https://popovantondev.github.io/popovantondev/datenschutz.html">Datenschutz</a><a href="https://github.com/popovantondev/LectureTranslate">GitHub</a></nav>
+</footer>
+<script src="Assets/demo.js?v=bb6a0f92" defer></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Changelog
 
-## 3.5.1 · release candidate · build 16
+## 3.5.1 · release · build 16
 
 GPT-6 Luna Medium creates translation drafts; GPT-6 Sol Medium checks selected risk areas. The interface is available in German, Russian, and English. The local offline suite passed 2,473 synthetic checks. The app is not Developer ID-signed or notarized.
 

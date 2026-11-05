@@ -9,3 +9,11 @@ Tests/QueuePilot/
 Tests/SpeechPilot/
 *.zip
 *.lectureproject
+
+# Working files of the build tooling are never published
+/.autopilot/
+AGENTS.md
+CLAUDE.md
+CONTEXT.md
+/docs/adr/
+/docs/architecture.md

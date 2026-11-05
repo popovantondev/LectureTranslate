@@ -28,5 +28,256 @@
       "Connect a translation service",
       "Save translated SRT"
     ]
-  }
+  },
+  "stack": "Swift · SwiftUI",
+  "palette_dark": {
+    "accent": "#b79ae6",
+    "accent-ink": "#22123c",
+    "tint": "#2a2040",
+    "hero": "#30224b",
+    "hero-end": "#655085"
+  },
+  "srt_example": {
+    "before": "Tests/Fixtures/Beispiel.de.srt",
+    "after": "Tests/Fixtures/Beispiel.ru.srt",
+    "text": {
+      "de": {
+        "title": "Beispiel: vor und nach der Übersetzung",
+        "sub": "Aus den Beispieldateien im Repository. Cue-IDs und Zeitcodes bleiben gleich.",
+        "before": "Deutsches Original (.srt)",
+        "after": "Russische Übersetzung (name.ru.srt)",
+        "note": "Beispiel mit künstlichen Daten, kein Live-Ergebnis. Die Übersetzung übernimmt in der App ein externer Dienst.",
+        "demo": {
+          "title": "Direkt im Browser testen",
+          "sub": "Beispiel aus den Dateien im Repository: deutsche Untertitel vor und russische nach der Übersetzung. Die Zeitcodes bleiben unverändert.",
+          "label": "Demo — Beispieldaten",
+          "source": "Quelle",
+          "target": "Ziel",
+          "translate": "Übersetzen",
+          "reset": "Zurücksetzen",
+          "hint": "Klicken Sie auf „Übersetzen“, um das fertige Beispielergebnis zu sehen.",
+          "done": "✓ Fertig: 3 Untertitel, alle Zeitcodes unverändert. (Demo — fertiges Beispiel, keine echte Übersetzung.)",
+          "pending": "noch nicht übersetzt",
+          "same": "Zeitcode gleich",
+          "mark": "Zeitcode markieren",
+          "nojs": "Für die Demo wird JavaScript benötigt.",
+          "cues": "Untertitel"
+        }
+      },
+      "en": {
+        "title": "Example: before and after translation",
+        "sub": "From the sample files in the repository. Cue IDs and timecodes stay the same.",
+        "before": "German original (.srt)",
+        "after": "Russian translation (name.ru.srt)",
+        "note": "Example with artificial data, not a live result. In the app, an external service does the translation.",
+        "demo": {
+          "title": "Try it in the browser",
+          "sub": "Example from the files in the repository: German subtitles before and Russian subtitles after translation. The timecodes stay unchanged.",
+          "label": "Demo — sample data",
+          "source": "Source",
+          "target": "Target",
+          "translate": "Translate",
+          "reset": "Reset",
+          "hint": "Click “Translate” to see the prepared sample result.",
+          "done": "✓ Done: 3 cues, all timecodes unchanged. (Demo — prepared example, not a real translation.)",
+          "pending": "not translated yet",
+          "same": "timecode unchanged",
+          "mark": "Mark timecode",
+          "nojs": "The demo needs JavaScript.",
+          "cues": "Cues"
+        }
+      },
+      "ru": {
+        "title": "Пример: до и после перевода",
+        "sub": "Из примеров в репозитории. Номера реплик и таймкоды не меняются.",
+        "before": "Немецкий оригинал (.srt)",
+        "after": "Русский перевод (name.ru.srt)",
+        "note": "Пример на искусственных данных, не результат живого запроса. В приложении перевод выполняет внешний сервис.",
+        "demo": {
+          "title": "Попробовать в браузере",
+          "sub": "Пример из файлов репозитория: немецкие субтитры до перевода и русские после. Таймкоды не меняются.",
+          "label": "Демо — примерные данные",
+          "source": "Источник",
+          "target": "Результат",
+          "translate": "Перевести",
+          "reset": "Сбросить",
+          "hint": "Нажмите «Перевести», чтобы увидеть готовый пример результата.",
+          "done": "✓ Готово: 3 реплики, все таймкоды без изменений. (Демо — готовый пример, не настоящий перевод.)",
+          "pending": "ещё не переведено",
+          "same": "таймкод совпадает",
+          "mark": "Отметить таймкод",
+          "nojs": "Для демо нужен JavaScript.",
+          "cues": "Реплики"
+        }
+      }
+    }
+  },
+  "bento": {
+    "de": {
+      "inst_text": "Die Schritte aus „Erste Schritte“ und der Build-Anleitung, im Terminal.",
+      "term": [
+        [
+          "ps",
+          "$ shasum -a 256 lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# Wert mit SHA256SUMS aus dem Release vergleichen"
+        ],
+        [
+          "ps",
+          "$ unzip lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# App nicht notarisiert: macOS kann beim ersten Öffnen warnen"
+        ],
+        [
+          "dim",
+          "# Verbindung zum Übersetzungsdienst nach Anleitung einrichten"
+        ],
+        [
+          "ok",
+          "→ Deutsche .srt hinzufügen, Profil wählen, Warteschlange starten"
+        ]
+      ],
+      "tile": {
+        "title": "Externer Dienst",
+        "text": "Übersetzung und Prüfung laufen über einen externen Dienst: Die Untertiteltexte werden über die angemeldete Verbindung übermittelt. Warteschlange, Journale und Projekte bleiben lokal auf dem Mac.",
+        "chips": [
+          "Anmeldung nötig",
+          "Texte gehen an den Dienst"
+        ]
+      },
+      "features": [
+        "Deutsch → Russisch",
+        "Cue-IDs und Zeitcodes bleiben erhalten",
+        "Pausierbare Warteschlange",
+        "Entwurf plus Prüfung ausgewählter Risikostellen",
+        "Lokale Hinweise zu Zahlen und Einheiten",
+        "Projektdateien (.lectureproject)",
+        "Vorschau des Originalvideos",
+        "Export als name.ru.srt",
+        "Oberfläche DE · RU · EN"
+      ],
+      "checks": [
+        "Automatische Prüfungen auf GitHub Actions (macOS 15): Tests, Preview-Build, Release- und Export-Prüfung",
+        "Laut Projektangabe 2473 lokale Offline-Prüfungen, darunter 14 Release-Validierungen",
+        "Zwölf synthetische Demo-Fenster (3 Sprachen × 2 Designs × 2 Größen) geprüft",
+        "SHA-256-Prüfsummen (SHA256SUMS) und manifest.json im Release",
+        "Version {v} mit Änderungsprotokoll"
+      ]
+    },
+    "en": {
+      "inst_text": "The steps from “First steps” and the build guide, in Terminal.",
+      "term": [
+        [
+          "ps",
+          "$ shasum -a 256 lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# Compare the value with SHA256SUMS from the release"
+        ],
+        [
+          "ps",
+          "$ unzip lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# App is not notarized: macOS may warn on first launch"
+        ],
+        [
+          "dim",
+          "# Set up the connection to the translation service as described in the guide"
+        ],
+        [
+          "ok",
+          "→ Add German .srt files, choose a profile, start the queue"
+        ]
+      ],
+      "tile": {
+        "title": "External service",
+        "text": "Translation and review go through an external service: the subtitle text is sent over the signed-in connection. Queue, logs and projects stay local on the Mac.",
+        "chips": [
+          "Sign-in required",
+          "Text is sent to the service"
+        ]
+      },
+      "features": [
+        "German → Russian",
+        "Cue IDs and timecodes preserved",
+        "Pausable queue",
+        "Draft plus review of selected risky passages",
+        "Local hints for numbers and units",
+        "Project files (.lectureproject)",
+        "Preview of the original video",
+        "Export as name.ru.srt",
+        "Interface DE · RU · EN"
+      ],
+      "checks": [
+        "Automatic checks on GitHub Actions (macOS 15): tests, preview build, release and export checks",
+        "According to the project, 2473 local offline checks including 14 release validations",
+        "Twelve synthetic demo windows (3 languages × 2 themes × 2 sizes) checked",
+        "SHA-256 checksums (SHA256SUMS) and manifest.json in the release",
+        "Version {v} with changelog"
+      ]
+    },
+    "ru": {
+      "inst_text": "Шаги из «Первых шагов» и инструкции по сборке, в Терминале.",
+      "term": [
+        [
+          "ps",
+          "$ shasum -a 256 lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# Сверить значение с SHA256SUMS из релиза"
+        ],
+        [
+          "ps",
+          "$ unzip lecture_translate-v{v}-app.zip"
+        ],
+        [
+          "dim",
+          "# Приложение не нотаризовано: при первом открытии macOS может предупредить"
+        ],
+        [
+          "dim",
+          "# Настроить подключение к сервису перевода по руководству"
+        ],
+        [
+          "ok",
+          "→ Добавить немецкие .srt, выбрать профиль, запустить очередь"
+        ]
+      ],
+      "tile": {
+        "title": "Внешний сервис",
+        "text": "Перевод и проверка идут через внешний сервис: тексты субтитров передаются по выполненному входу. Очередь, журналы и проекты остаются локально на Mac.",
+        "chips": [
+          "Нужен вход",
+          "Тексты уходят сервису"
+        ]
+      },
+      "features": [
+        "Немецкий → русский",
+        "Номера реплик и таймкоды сохраняются",
+        "Очередь с паузой",
+        "Черновик и проверка выбранных рискованных мест",
+        "Локальные подсказки по числам и единицам",
+        "Файлы проектов (.lectureproject)",
+        "Просмотр исходного видео",
+        "Экспорт как name.ru.srt",
+        "Интерфейс DE · RU · EN"
+      ],
+      "checks": [
+        "Автоматические проверки в GitHub Actions (macOS 15): тесты, предварительная сборка, проверки релиза и экспорта",
+        "По данным проекта — 2473 локальные офлайн-проверки, в том числе 14 проверок релиза",
+        "Проверены двенадцать синтетических демо-окон (3 языка × 2 темы × 2 размера)",
+        "Контрольные суммы SHA-256 (SHA256SUMS) и manifest.json в релизе",
+        "Версия {v} и журнал изменений"
+      ]
+    }
+  },
+  "kit": "Assets/kit"
 }

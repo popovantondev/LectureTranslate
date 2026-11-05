@@ -48,8 +48,8 @@ struct ListeningTools {
         let home = FileManager.default.homeDirectoryForCurrentUser
         var directories = [URL(fileURLWithPath: "/opt/homebrew/bin"), URL(fileURLWithPath: "/usr/local/bin")]
         if let saved = UserDefaults.standard.string(forKey: "listeningToolsDirectory") { directories.insert(URL(fileURLWithPath: saved), at: 0) }
-        directories += ["Projects/Programmierung/Оля лекции транскрипция FFMPEG/Версия 2.0/vendor",
-                        "Projects/Programmierung/Оля лекции транскрипция FFMPEG/vendor"].map { home.appendingPathComponent($0) }
+        directories += ["Projects/FFmpeg/vendor",
+                        "Projects/FFmpeg"].map { home.appendingPathComponent($0) }
         directories += (ProcessInfo.processInfo.environment["PATH"] ?? "").split(separator: ":").filter { $0.hasPrefix("/") }.map { URL(fileURLWithPath: String($0)) }
         return directories.compactMap(inDirectory).first
     }

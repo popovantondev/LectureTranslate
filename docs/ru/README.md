@@ -18,7 +18,7 @@
 **Контрольные суммы:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
 
-[Немецкая версия](../de/README.md) · [Русская версия](README.md) · [Английская версия](../en/README.md)
+[Немецкая версия](../de/README.md) · [Русская версия](README.md) · [Английская версия](../en/README.md) · [Обзор проекта](../../README.ru.md)
 
 **Версия 3.5.1 · build 16.** Релиз опубликован. Ранее выполненные проверки используют искусственные данные и изолированные GUI-сценарии. [Скачать релиз 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1).
 

@@ -1,6 +1,6 @@
 # Änderungen
 
-## 3.5.1 · Release-Kandidat · Build 16
+## 3.5.1 · Release · Build 16
 
 GPT-6 Luna Medium erstellt Übersetzungsentwürfe; GPT-6 Sol Medium prüft ausgewählte Risikostellen. Die Oberfläche ist auf Deutsch, Russisch und Englisch verfügbar. Der lokale Offline-Test bestand 2473 synthetische Prüfungen. Das App-Binary ist nicht Developer-ID-signiert und nicht notarisiert.
 

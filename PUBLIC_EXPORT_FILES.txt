@@ -1,5 +1,5 @@
 # Exact source allowlist for the public GitHub snapshot. One regular file per line.
-# Keep private AGENTS/memory/verification, local release machinery and real pilot data out.
+# Only files listed here are published; everything else stays out of the snapshot.
 .github/CONTRIBUTING.md
 .github/ISSUE_TEMPLATE/bug_report.yml
 .github/ISSUE_TEMPLATE/config.yml
@@ -12,6 +12,9 @@ BUILD_NUMBER
 Info.plist
 PUBLIC_EXPORT_FILES.txt
 README.md
+README.en.md
+README.ru.md
+RIGHTS.md
 Resources/de.lproj/Localizable.strings
 Resources/en.lproj/Localizable.strings
 Resources/ru.lproj/Localizable.strings
@@ -131,8 +134,15 @@ docs/screenshots/ru/dark-compact.png
 docs/screenshots/ru/dark-large.png
 docs/screenshots/ru/light-compact.png
 docs/screenshots/ru/light-large.png
-Проверить.command
-guide-polish.css
+run-checks.command
+guide-kit.css
+index.html
+Assets/demo.js
+Assets/kit/KIT_VERSION
+Assets/kit/kit-theme.js
+Assets/kit/kit.css
+Assets/kit/kit.js
+Assets/kit/programs.js
 index-de.html
 index-en.html
 index-ru.html

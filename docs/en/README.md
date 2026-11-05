@@ -18,7 +18,7 @@ Translate German SRT subtitles into Russian with preserved timecodes, a queue an
 **Checksums:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
 
-[German](../de/README.md) · [Russian](../ru/README.md) · [English](README.md)
+[German](../de/README.md) · [Russian](../ru/README.md) · [English](README.md) · [Project overview](../../README.en.md)
 
 **Version 3.5.1 · build 16.** The release is published. The existing checks use synthetic data and isolated GUI scenarios. [Download release 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1).
 

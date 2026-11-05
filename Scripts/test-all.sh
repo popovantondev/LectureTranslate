@@ -2,7 +2,7 @@
 set -euo pipefail
 translator_root="$(cd -- "$(dirname -- "$0")/.." && pwd)"
 cd "$translator_root"
-bash Проверить.command
+bash run-checks.command
 bash Scripts/test-model.sh
 bash Scripts/test-quota.sh
 bash Scripts/test-speech.sh
