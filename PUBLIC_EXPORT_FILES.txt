@@ -143,6 +143,19 @@ Assets/kit/kit-theme.js
 Assets/kit/kit.css
 Assets/kit/kit.js
 Assets/kit/programs.js
+Assets/web/dark-compact.0aa04418.webp
+Assets/web/dark-compact.43c4b66a.webp
+Assets/web/dark-compact.c8012a07.webp
+Assets/web/dark-large.90a135d3.webp
+Assets/web/dark-large.e54205be.webp
+Assets/web/dark-large.f7aec0bd.webp
+Assets/web/light-compact.0e7c9c50.webp
+Assets/web/light-compact.6db3915e.webp
+Assets/web/light-compact.7ab8e1bf.webp
+Assets/web/light-large.b24f1689.webp
+Assets/web/light-large.c347fbdc.webp
+Assets/web/light-large.f5e8ec1f.webp
+Assets/web/TranslatorIcon.a2f05b22.webp
 index-de.html
 index-en.html
 index-ru.html
@@ -151,3 +164,4 @@ presentation.css
 tools/build_presentation.py
 tools/polish_guides.py
 tools/presentation.json
+tools/site_images.py
