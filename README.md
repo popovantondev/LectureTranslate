@@ -1,5 +1,7 @@
 # LectureTranslate
 
+**Deutsch** · [Русский](README.ru.md) · [English](README.en.md)
+
 <!-- public-release:start -->
 Übersetzt deutsche SRT-Untertitel ins Russische mit Zeitcodes, Warteschlange und Entwurfsprüfung.
 
@@ -19,8 +21,6 @@
 <!-- public-release:end -->
 
 <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
-
-**Deutsch** · [Русский](README.ru.md) · [English](README.en.md)
 
 [LectureTranslate 3.5.1 herunterladen](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
 

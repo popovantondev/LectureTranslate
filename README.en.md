@@ -1,5 +1,7 @@
 # LectureTranslate
 
+[Deutsch](README.md) · [Русский](README.ru.md) · **English**
+
 <!-- public-release:start -->
 Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review.
 
@@ -19,8 +21,6 @@ Translate German SRT subtitles into Russian with preserved timecodes, a queue an
 <!-- public-release:end -->
 
 <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
-
-[Deutsch](README.md) · [Русский](README.ru.md) · **English**
 
 [Download LectureTranslate 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
 

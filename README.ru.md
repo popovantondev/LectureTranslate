@@ -1,5 +1,7 @@
 # LectureTranslate
 
+[Deutsch](README.md) · **Русский** · [English](README.en.md)
+
 <!-- public-release:start -->
 Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.
 
@@ -19,8 +21,6 @@
 <!-- public-release:end -->
 
 <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — значок: глобус и RU">
-
-[Deutsch](README.md) · **Русский** · [English](README.en.md)
 
 [Скачать LectureTranslate 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
 
