@@ -1,6 +1,10 @@
+<div align="center">
+  <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate Symbol">
+</div>
+
 # LectureTranslate
 
-**Deutsch** · [Русский](README.ru.md) · [English](README.en.md)
+[Русский](README.ru.md) · **Deutsch** · [English](README.en.md)
 
 <!-- public-release:start -->
 Übersetzt deutsche SRT-Untertitel ins Russische mit Zeitcodes, Warteschlange und Entwurfsprüfung.
@@ -20,9 +24,11 @@
 **Prüfsummen:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
 
-<img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
+**[Webseite](https://popovantondev.github.io/LectureTranslate/)** · **[Im Browser ausprobieren](https://popovantondev.github.io/LectureTranslate/index.html#demo)**
 
-[LectureTranslate 3.5.1 herunterladen](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
+![LectureTranslate-Demo auf Deutsch mit künstlichen Untertiteln; Modellzugriff und Kontozugriff sind deaktiviert](docs/screenshots/de/light-large.png)
+
+Dies ist ein synthetischer Demo-Screenshot. Modellzugriff und Kontozugriff sind deaktiviert.
 
 **Aktueller Release: 3.5.1 · Build 16.** Prüfen Sie vor dem Download die Release-Notizen und SHA-256-Prüfsummen. Frühere Releases bleiben im GitHub-Archiv verfügbar.
 
@@ -51,12 +57,6 @@ Die Oberfläche ist auf Deutsch, Russisch und Englisch verfügbar. Die lokale Of
 3. Übersetzung starten. Fertige Ergebnisse werden im Verlauf der Warteschlange gesichert; die Warteschlange kann pausiert und fortgesetzt werden.
 
 Zuerst entsteht ein Übersetzungsentwurf; ausgewählte Risikostellen werden anschließend geprüft. Ein gespeichertes SRT mit offenen Hinweisen ist dadurch nicht fachlich bestätigt. Namen, unklare Erkennung, Mengenangaben und medizinische Aussagen am deutschen Original und bei Bedarf am Video prüfen.
-
-## Screenshot
-
-![LectureTranslate-Demo auf Deutsch mit künstlichen Untertiteln; Modellzugriff und Kontozugriff sind deaktiviert](docs/screenshots/de/light-large.png)
-
-Dies ist ein synthetischer Demo-Screenshot. Modellzugriff und Kontozugriff sind deaktiviert.
 
 ## Daten und Datenschutz
 

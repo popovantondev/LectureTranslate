@@ -1,6 +1,10 @@
+<div align="center">
+  <img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate icon">
+</div>
+
 # LectureTranslate
 
-[Deutsch](README.md) · [Русский](README.ru.md) · **English**
+[Русский](README.ru.md) · [Deutsch](README.md) · **English**
 
 <!-- public-release:start -->
 Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review.
@@ -20,9 +24,11 @@ Translate German SRT subtitles into Russian with preserved timecodes, a queue an
 **Checksums:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
 
-<img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — globe to RU icon">
+**[Website](https://popovantondev.github.io/LectureTranslate/index-en.html)** · **[Try in the browser](https://popovantondev.github.io/LectureTranslate/index-en.html#demo)**
 
-[Download LectureTranslate 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
+![LectureTranslate demo in English with artificial subtitles; model access and account access are disabled](docs/screenshots/en/light-large.png)
+
+This is a synthetic demo screenshot. Model access and account access are disabled.
 
 **Current release: 3.5.1 · build 16.** Check the release notes and SHA-256 checksums before downloading. Earlier releases remain available in the GitHub archive.
 
@@ -51,12 +57,6 @@ The interface is available in German, Russian and English. The local offline sui
 3. Start the translation. Finished results are saved in the queue history; the queue can be paused and resumed.
 
 A translation draft is created first; selected risky passages are then reviewed. A saved SRT with open hints is therefore not professionally confirmed. Check names, unclear recognition, quantities and medical statements against the German original and, if needed, the video.
-
-## Screenshot
-
-![LectureTranslate demo in English with artificial subtitles; model access and account access are disabled](docs/screenshots/en/light-large.png)
-
-This is a synthetic demo screenshot. Model access and account access are disabled.
 
 ## Data and privacy
 

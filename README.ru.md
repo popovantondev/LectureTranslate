@@ -1,6 +1,10 @@
+<div align="center">
+  <img src="Assets/TranslatorIcon.png" width="128" alt="Значок LectureTranslate">
+</div>
+
 # LectureTranslate
 
-[Deutsch](README.md) · **Русский** · [English](README.en.md)
+**Русский** · [Deutsch](README.md) · [English](README.en.md)
 
 <!-- public-release:start -->
 Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.
@@ -20,9 +24,11 @@
 **Контрольные суммы:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
 
-<img src="Assets/TranslatorIcon.png" width="128" alt="LectureTranslate — значок: глобус и RU">
+**[Сайт](https://popovantondev.github.io/LectureTranslate/index-ru.html)** · **[Попробовать в браузере](https://popovantondev.github.io/LectureTranslate/index-ru.html#demo)**
 
-[Скачать LectureTranslate 3.5.1](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1)
+![Демонстрация LectureTranslate на русском с искусственными субтитрами; доступ к модели и аккаунту отключён](docs/screenshots/ru/light-large.png)
+
+Это синтетический демонстрационный снимок. Доступ к модели и аккаунту отключён.
 
 **Текущий выпуск: 3.5.1 · сборка 16.** Перед загрузкой проверьте заметки к выпуску и контрольные суммы SHA-256. Предыдущие выпуски остаются в архиве GitHub.
 
@@ -51,12 +57,6 @@ LectureTranslate — нативное приложение для macOS, кот�
 3. Запустите перевод. Готовые результаты сохраняются в истории очереди; очередь можно приостановить и продолжить.
 
 Сначала создаётся черновик перевода, затем проверяются выбранные рискованные места. Сохранённый SRT с открытыми замечаниями поэтому не считается проверенным по существу. Имена, неясное распознавание, количества и медицинские утверждения сверяйте с немецким оригиналом и при необходимости с видео.
-
-## Снимок экрана
-
-![Демонстрация LectureTranslate на русском с искусственными субтитрами; доступ к модели и аккаунту отключён](docs/screenshots/ru/light-large.png)
-
-Это синтетический демонстрационный снимок. Доступ к модели и аккаунту отключён.
 
 ## Данные и конфиденциальность
 
