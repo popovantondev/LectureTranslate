@@ -69,8 +69,10 @@
     var badge = el('span', 'ppk-badge ppk-badge-ok', L.same);
     badge.hidden = true;
     time.appendChild(badge);
-    var src = el('p', null, cue.x);
+    var src = el('p');
     src.lang = 'de';
+    src.appendChild(el('span', 'demo-lang', 'DE'));  /* the sample source text is German */
+    src.appendChild(document.createTextNode(cue.x));
     var dst = el('p', 'is-pending', L.pending);
     li.appendChild(time);
     li.appendChild(src);

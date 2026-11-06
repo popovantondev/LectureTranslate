@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="color-scheme" content="light dark">
 <meta name="description" content="Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review.">
-<title>LectureTranslate — User guide · Release · 3.5.1</title>
+<title>LectureTranslate — Translate German SRT subtitles into Russian with preserved timecodes, a queue and draft review</title>
 <link rel="icon" href="presentation-icon.png">
 <script src="Assets/kit/kit-theme.js"></script><link rel="stylesheet" href="Assets/kit/kit.css?v=2026.11.06-2"><script src="Assets/kit/programs.js?v=2026.11.06-2" defer></script><script src="Assets/kit/kit.js?v=2026.11.06-2" defer></script>
 <link rel="stylesheet" href="presentation.css?v=2026.11.06-2">
@@ -63,9 +63,9 @@
 <h2 id="demo-title">Try it in the browser</h2>
 <p class="ppk-sub">Example from the files in the repository: German subtitles before and Russian subtitles after translation. The timecodes stay unchanged.</p>
 <div class="ppk-demo"><div class="ppk-demo-head"><span>Lecture Translate</span><span class="ppk-demo-label">Demo — sample data</span></div>
-<div class="ppk-demo-body"><div class="ppk-demo-main"><noscript><p class="ppk-demo-empty">The demo needs JavaScript.</p><ol class="demo-cues"><li><code>00:00:01,000 --&gt; 00:00:04,500</code><p lang="de">Heute sprechen wir über Heilpflanzen.</p><p lang="ru">Сегодня мы говорим о лекарственных
-растениях.</p></li><li><code>00:00:04,500 --&gt; 00:00:08,000</code><p lang="de">Nicht jede Pflanze ist für jeden Menschen geeignet.</p><p lang="ru">Не каждое растение подходит каждому
-человеку.</p></li><li><code>00:00:08,200 --&gt; 00:00:12,000</code><p lang="de">In diesem Beispiel steht die Angabe 5 ml.</p><p lang="ru">В этом примере указано пять миллилитров.</p></li></ol></noscript></div></div></div>
+<div class="ppk-demo-body"><div class="ppk-demo-main"><noscript><p class="ppk-demo-empty">The demo needs JavaScript.</p><ol class="demo-cues"><li><code>00:00:01,000 --&gt; 00:00:04,500</code><p lang="de"><span class="demo-lang">DE</span>Heute sprechen wir über Heilpflanzen.</p><p lang="ru">Сегодня мы говорим о лекарственных
+растениях.</p></li><li><code>00:00:04,500 --&gt; 00:00:08,000</code><p lang="de"><span class="demo-lang">DE</span>Nicht jede Pflanze ist für jeden Menschen geeignet.</p><p lang="ru">Не каждое растение подходит каждому
+человеку.</p></li><li><code>00:00:08,200 --&gt; 00:00:12,000</code><p lang="de"><span class="demo-lang">DE</span>In diesem Beispiel steht die Angabe 5 ml.</p><p lang="ru">В этом примере указано пять миллилитров.</p></li></ol></noscript></div></div></div>
 <p class="ppk-notice">Example with artificial data, not a live result. In the app, an external service does the translation.</p>
 <script type="application/json" id="demo-data">{"labels": {"title": "Try it in the browser", "sub": "Example from the files in the repository: German subtitles before and Russian subtitles after translation. The timecodes stay unchanged.", "label": "Demo — sample data", "source": "Source", "target": "Target", "translate": "Translate", "reset": "Reset", "hint": "Click “Translate” to see the prepared sample result.", "done": "✓ Done: 3 cues, all timecodes unchanged. (Demo — prepared example, not a real translation.)", "pending": "not translated yet", "same": "timecode unchanged", "mark": "Mark timecode", "nojs": "The demo needs JavaScript.", "cues": "Cues", "before": "German original (.srt)", "after": "Russian translation (name.ru.srt)", "note": "Example with artificial data, not a live result. In the app, an external service does the translation.", "sourceName": "Beispiel.de.srt", "targetName": "Beispiel.ru.srt"}, "before": [{"n": "7", "t": "00:00:01,000 --> 00:00:04,500", "x": "Heute sprechen wir über Heilpflanzen."}, {"n": "11", "t": "00:00:04,500 --> 00:00:08,000", "x": "Nicht jede Pflanze ist für jeden Menschen geeignet."}, {"n": "15", "t": "00:00:08,200 --> 00:00:12,000", "x": "In diesem Beispiel steht die Angabe 5 ml."}], "after": [{"n": "7", "t": "00:00:01,000 --> 00:00:04,500", "x": "Сегодня мы говорим о лекарственных\nрастениях."}, {"n": "11", "t": "00:00:04,500 --> 00:00:08,000", "x": "Не каждое растение подходит каждому\nчеловеку."}, {"n": "15", "t": "00:00:08,200 --> 00:00:12,000", "x": "В этом примере указано пять миллилитров."}]}</script>
 </section>
@@ -75,9 +75,9 @@
 </section>
 </main>
 <footer class="ppk-footer">
-  <span>© 2026 Anton Popov · LectureTranslate 3.5.1</span>
-  <nav aria-label="Legal"><a href="https://popovantondev.github.io/popovantondev/impressum.html">Impressum</a><a href="https://popovantondev.github.io/popovantondev/datenschutz.html">Datenschutz</a><a href="https://github.com/popovantondev/LectureTranslate">GitHub</a></nav>
+<span>© 2026 Anton Popov · LectureTranslate 3.5.1</span>
+<nav aria-label="Legal"><a href="https://popovantondev.github.io/popovantondev/impressum.html">Impressum</a><a href="https://popovantondev.github.io/popovantondev/datenschutz.html">Datenschutz</a><a href="https://github.com/popovantondev/LectureTranslate/blob/main/RIGHTS.md">Rights</a><a href="https://github.com/popovantondev/LectureTranslate/issues/new/choose">Report a problem</a><a href="https://github.com/popovantondev/LectureTranslate">GitHub</a></nav>
 </footer>
-<script src="Assets/demo.js?v=bb6a0f92" defer></script>
+<script src="Assets/demo.js?v=7cbf1f97" defer></script>
 </body>
 </html>

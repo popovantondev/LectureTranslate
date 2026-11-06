@@ -107,12 +107,36 @@ def nav_html(cfg, d, lang, page):
         f'  </nav>\n</div>')
 
 
+def tagline(d, lang):
+    """Gist for <title>: the first sentence of the hero description, without the final full stop."""
+    return re.split(r'(?<=[.!?])\s', d['description'][lang].strip())[0].rstrip('.')
+
+
+LEGAL_LINKS = {'ru': ('Сообщить об ошибке', 'Права'),
+               'de': ('Problem melden', 'Rechte'),
+               'en': ('Report a problem', 'Rights')}
+
+
+def rights_url(d, lang):
+    """Rights page of the repository: RIGHTS in the page language, else RIGHTS.md, else LICENSE; None without any."""
+    for name in (f'RIGHTS.{lang}.md', 'RIGHTS.md', 'LICENSE'):
+        if (ROOT / name).is_file():
+            return d['source_url'] + '/blob/main/' + name
+    return None
+
+
 def footer_html(d, lang):
+    """Footer of every site, one order: Impressum, Datenschutz, rights (if the repository has them), report a problem, GitHub."""
     t = TEXT[lang]
+    issue_label, rights_label = LEGAL_LINKS[lang]
+    rights = rights_url(d, lang)
+    links = [f'<a href="{PROFILE}impressum.html">Impressum</a>', f'<a href="{PROFILE}datenschutz.html">Datenschutz</a>']
+    if rights:
+        links.append(f'<a href="{e(rights)}">{rights_label}</a>')
+    links += [f'<a href="{e(d["feedback_url"])}">{issue_label}</a>', f'<a href="{e(d["source_url"])}">GitHub</a>']
     return (
-        f'<footer class="ppk-footer">\n  <span>© 2026 Anton Popov · {e(d["name"])} {e(d["version"])}</span>\n'
-        f'  <nav aria-label="{e(t["legal"])}"><a href="{PROFILE}impressum.html">Impressum</a>'
-        f'<a href="{PROFILE}datenschutz.html">Datenschutz</a><a href="{e(d["source_url"])}">GitHub</a></nav>\n</footer>')
+        f'<footer class="ppk-footer">\n<span>© 2026 Anton Popov · {e(d["name"])} {e(d["version"])}</span>\n'
+        f'<nav aria-label="{e(t["legal"])}">' + ''.join(links) + '</nav>\n</footer>')
 
 
 def head_assets(cfg, rel=''):
@@ -145,7 +169,7 @@ def page_css(cfg):
         + '.demo-cues{display:grid;gap:10px;margin:0;padding:0;list-style:none}.demo-cues li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:6px 14px;padding:10px 12px;border:1px solid var(--ppk-line);border-radius:var(--ppk-radius-m);transition:background-color .2s,border-color .2s}\n'
         + '.demo-cues li.is-marked{background:var(--ppk-tint);border-color:var(--ppk-accent)}.demo-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:14px;margin:0 0 8px;padding:0 12px;font-size:13px;font-weight:700;color:var(--ppk-muted)}\n'
         + '.demo-time{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0;padding:0;border:0;background:transparent;color:var(--ppk-ink);font:13px/1.5 var(--ppk-mono);text-align:left;cursor:pointer}\n'
-        + '.demo-cues p{margin:0;min-width:0;white-space:pre-line;overflow-wrap:anywhere;font-size:14px;line-height:1.6}.demo-cues p.is-pending{color:var(--ppk-muted);font-style:italic}\n'
+        + '.demo-cues p{margin:0;min-width:0;white-space:pre-line;overflow-wrap:anywhere;font-size:14px;line-height:1.6}.demo-cues p.is-pending{color:var(--ppk-muted);font-style:italic}.demo-lang{display:inline-block;margin-right:8px;padding:0 6px;border:1px solid var(--ppk-line);border-radius:var(--ppk-radius-s);font-size:11px;font-weight:700;letter-spacing:.04em;line-height:1.5;color:var(--ppk-muted);vertical-align:1px}\n'
         + '@media (max-width:640px){.demo-cues li,.demo-head{grid-template-columns:minmax(0,1fr)}}\n'
         + '@media (max-width:760px){.ppk-start{grid-template-columns:1fr;padding:22px}}\n')
 
@@ -209,7 +233,7 @@ def demo_html(cfg, lang):
     labels = dict(dm, before=x['before'], after=x['after'], note=x['note'], sourceName=Path(ex['before']).name, targetName=Path(ex['after']).name)
     data = json.dumps({'labels': labels, 'before': before, 'after': after}, ensure_ascii=False).replace('<', '\\u003c')
     static = ''.join(
-        f'<li><code>{e(b["t"])}</code><p lang="de">{e(b["x"])}</p><p lang="ru">{e(a["x"])}</p></li>' for b, a in zip(before, after))
+        f'<li><code>{e(b["t"])}</code><p lang="de"><span class="demo-lang">DE</span>{e(b["x"])}</p><p lang="ru">{e(a["x"])}</p></li>' for b, a in zip(before, after))
     return (
         '<section class="ppk-section ppk-demo-section ppk-reveal" id="demo" data-demo="lecturetranslate" aria-labelledby="demo-title">\n'
         f'<h2 id="demo-title">{e(dm["title"])}</h2>\n<p class="ppk-sub">{e(dm["sub"])}</p>\n'
@@ -241,7 +265,7 @@ def landing_html(cfg, d, lang):
         extra = t['source_note'] + ' ' + extra
     notice = f'<p class="ppk-notice">{e(extra.strip())}</p>' if extra.strip() else ''
     guide = 'Guide-' + lang + '.html'
-    title = f'{d["name"]} — {t["guide"]} · {status}'
+    title = f'{d["name"]} — {tagline(d, lang)}'
     return f'''<!doctype html>
 <html lang="{lang}">
 <head>
