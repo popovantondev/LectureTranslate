@@ -1,10 +1,25 @@
-<div align="center">
-  <img src="Assets/TranslatorIcon.png" width="128" alt="Значок LectureTranslate">
-</div>
+<!-- ppk-readme:head:start -->
+<a href="https://popovantondev.github.io/LectureTranslate/index-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/header-ru-dark.18475cdc.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/header-ru-light.f2348d5a.svg" width="880" height="188" alt="LectureTranslate — Переводит немецкие SRT-субтитры на русский. macOS 15+ · Apple Silicon, Выпуск 3.5.1"></picture></a>
+<!-- ppk-readme:head:end -->
 
 # LectureTranslate
 
 **Русский** · [Deutsch](README.md) · [English](README.en.md)
+
+<!-- ppk-readme:body:start -->
+<p>
+<a href="https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-download-ru-dark.0b229bad.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-download-ru-light.008a5da5.svg" width="120" height="36" alt="Скачать"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/index-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-website-ru-dark.b19ca91a.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-website-ru-light.9a3836ae.svg" width="92" height="36" alt="Сайт"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/Guide-ru.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-guide-ru-dark.c5d8fca4.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-guide-ru-light.053c272f.svg" width="161" height="36" alt="Руководство"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/index-ru.html#demo"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-demo-ru-dark.346b0509.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-demo-ru-light.d6b1ff03.svg" width="261" height="36" alt="Попробовать в браузере"></picture></a>
+<a href="https://github.com/popovantondev/LectureTranslate/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-bug-ru-dark.473eba6c.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-bug-ru-light.6fea1755.svg" width="234" height="36" alt="Сообщить об ошибке"></picture></a>
+</p>
+
+<p><a href="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/screenshots/ru/light-large.png"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/preview-ru-dark.8c75a02a.webp"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/preview-ru-light.bd004472.webp" width="880" height="516" alt="Интерфейс программы LectureTranslate"></picture></a><br>
+<sub><a href="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/screenshots/ru/light-large.png">Снимок целиком</a></sub></p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/divider-dark.9c6c8b18.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/divider-light.9e9eec0f.svg" width="880" height="6" alt="Разделитель"></picture>
+<!-- ppk-readme:body:end -->
 
 <!-- public-release:start -->
 Переводит немецкие SRT-субтитры на русский с сохранением таймкодов, очередью и проверкой черновика.
@@ -23,10 +38,6 @@
 
 **Контрольные суммы:** [`SHA256SUMS`](https://github.com/popovantondev/LectureTranslate/releases/download/v3.5.1/SHA256SUMS)
 <!-- public-release:end -->
-
-**[Сайт](https://popovantondev.github.io/LectureTranslate/index-ru.html)** · **[Попробовать в браузере](https://popovantondev.github.io/LectureTranslate/index-ru.html#demo)**
-
-![Демонстрация LectureTranslate на русском с искусственными субтитрами; доступ к модели и аккаунту отключён](docs/screenshots/ru/light-large.png)
 
 Это синтетический демонстрационный снимок. Доступ к модели и аккаунту отключён.
 
