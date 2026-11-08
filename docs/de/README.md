@@ -1,3 +1,7 @@
+<!-- ppk-readme:head:start -->
+<a href="https://popovantondev.github.io/LectureTranslate/index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/header-de-dark.725a1fee.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/header-de-light.0a9e783e.svg" width="880" height="188" alt="LectureTranslate — Übersetzt deutsche SRT-Untertitel ins Russische. macOS 15+ · Apple Silicon, Release 3.5.1"></picture></a>
+<!-- ppk-readme:head:end -->
+
 # LectureTranslate · Benutzerhandbuch
 
 <!-- public-release:start -->
@@ -20,6 +24,21 @@
 
 [Deutsch](README.md) · [Russisch](../ru/README.md) · [Englisch](../en/README.md) · [Zur Projektübersicht](../../README.md)
 
+<!-- ppk-readme:body:start -->
+<p>
+<a href="https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-download-de-dark.06027925.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-download-de-light.7effbbdd.svg" width="171" height="36" alt="Herunterladen"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/index.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-website-de-dark.306aea77.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-website-de-light.7e56fc25.svg" width="129" height="36" alt="Webseite"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/Guide-de.html"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-guide-de-dark.e976b4f8.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-guide-de-light.012269d3.svg" width="134" height="36" alt="Anleitung"></picture></a>
+<a href="https://popovantondev.github.io/LectureTranslate/index.html#demo"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-demo-de-dark.b900c656.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-demo-de-light.e9188bee.svg" width="203" height="36" alt="Im Browser testen"></picture></a>
+<a href="https://github.com/popovantondev/LectureTranslate/issues/new/choose"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-bug-de-dark.c8eaca53.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/btn-bug-de-light.e6f1685c.svg" width="168" height="36" alt="Fehler melden"></picture></a>
+</p>
+
+<p><a href="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/screenshots/de/light-large.png"><picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/preview-de-dark.67c732de.webp"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/preview-de-light.dc8bea81.webp" width="880" height="516" alt="Oberfläche von LectureTranslate"></picture></a><br>
+<sub><a href="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/screenshots/de/light-large.png">Ganzer Screenshot</a></sub></p>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/divider-dark.9c6c8b18.svg"><img src="https://raw.githubusercontent.com/popovantondev/LectureTranslate/main/docs/readme/divider-light.9e9eec0f.svg" width="880" height="6" alt="Trennlinie"></picture>
+<!-- ppk-readme:body:end -->
+
 **Version 3.5.1 · Build 16.** Der Release ist veröffentlicht. Die bisherigen Prüfungen verwenden synthetische Daten und isolierte GUI-Szenarien. [Release 3.5.1 herunterladen](https://github.com/popovantondev/LectureTranslate/releases/tag/v3.5.1).
 
 LectureTranslate ist eine native macOS-App zum Übersetzen deutscher Vorlesungsuntertitel (`.srt`) ins Russische. Cue-IDs und Zeitcodes bleiben erhalten. Die App bietet eine pausierbare Warteschlange, lokale Prüfhinweise und Export als `name.ru.srt`.
@@ -32,11 +51,11 @@ Die Beispiele verwenden ausschließlich synthetische Daten; Übersetzungsanfrage
 
 | Helles Design · kompakt | Helles Design · groß |
 |---|---|
-| ![LectureTranslate auf Deutsch, helles kompaktes Fenster](../screenshots/de/light-compact.png) | ![LectureTranslate auf Deutsch, helles großes Fenster](../screenshots/de/light-large.png) |
+| [LectureTranslate auf Deutsch, helles kompaktes Fenster](../screenshots/de/light-compact.png) | [LectureTranslate auf Deutsch, helles großes Fenster](../screenshots/de/light-large.png) |
 
 | Dunkles Design · kompakt | Dunkles Design · groß |
 |---|---|
-| ![LectureTranslate auf Deutsch, dunkles kompaktes Fenster](../screenshots/de/dark-compact.png) | ![LectureTranslate auf Deutsch, dunkles großes Fenster](../screenshots/de/dark-large.png) |
+| [LectureTranslate auf Deutsch, dunkles kompaktes Fenster](../screenshots/de/dark-compact.png) | [LectureTranslate auf Deutsch, dunkles großes Fenster](../screenshots/de/dark-large.png) |
 
 ## Übersetzen
 
